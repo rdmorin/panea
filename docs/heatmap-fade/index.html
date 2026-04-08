@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heatmap Fade Comparator</title>
+  <style>
+    :root {
+      --bg: #f4efe4;
+      --panel: rgba(255, 251, 245, 0.88);
+      --panel-border: rgba(69, 55, 34, 0.14);
+      --text: #2c2417;
+      --muted: #6e6049;
+      --accent: #0b7285;
+      --accent-soft: rgba(11, 114, 133, 0.15);
+      --shadow: 0 24px 60px rgba(64, 47, 20, 0.12);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(11, 114, 133, 0.14), transparent 30%),
+        radial-gradient(circle at top right, rgba(193, 111, 32, 0.13), transparent 32%),
+        linear-gradient(180deg, #fbf7f0 0%, var(--bg) 100%);
+    }
+
+    .page {
+      width: min(1200px, calc(100vw - 32px));
+      margin: 24px auto;
+      display: grid;
+      gap: 20px;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--panel-border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    .hero {
+      padding: 24px 24px 8px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+    }
+
+    .lede {
+      margin: 0;
+      max-width: 60rem;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(260px, 320px) minmax(0, 1fr);
+      gap: 20px;
+      align-items: start;
+    }
+
+    .controls {
+      padding: 20px;
+      display: grid;
+      gap: 18px;
+      align-self: start;
+      position: sticky;
+      top: 24px;
+      z-index: 2;
+      min-width: 0;
+    }
+
+    .controls h2,
+    .viewer h2 {
+      margin: 0;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+    }
+
+    .group {
+      display: grid;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    label {
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    input[type="file"],
+    input[type="text"],
+    input[type="number"],
+    input[type="range"],
+    button {
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+    }
+
+    input,
+    output,
+    label,
+    .pair > *,
+    .inline > * {
+      min-width: 0;
+    }
+
+    input[type="file"],
+    input[type="text"],
+    input[type="number"] {
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(69, 55, 34, 0.18);
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--text);
+      font: inherit;
+    }
+
+    input[type="range"] {
+      accent-color: var(--accent);
+    }
+
+    button {
+      border: 0;
+      border-radius: 999px;
+      padding: 12px 14px;
+      background: var(--accent);
+      color: white;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 140ms ease, opacity 140ms ease;
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+    }
+
+    button.secondary {
+      background: rgba(44, 36, 23, 0.08);
+      color: var(--text);
+    }
+
+    .inline {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .hint,
+    .status {
+      margin: 0;
+      font-size: 0.88rem;
+      line-height: 1.45;
+      color: var(--muted);
+    }
+
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .chip {
+      border-radius: 999px;
+      padding: 6px 10px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.84rem;
+      font-weight: 700;
+    }
+
+    .viewer {
+      padding: 20px;
+      display: grid;
+      gap: 16px;
+      min-width: 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .stage {
+      position: relative;
+      overflow: hidden;
+      border-radius: 16px;
+      border: 1px solid rgba(69, 55, 34, 0.14);
+      background:
+        linear-gradient(45deg, rgba(44, 36, 23, 0.04) 25%, transparent 25%, transparent 75%, rgba(44, 36, 23, 0.04) 75%),
+        linear-gradient(45deg, rgba(44, 36, 23, 0.04) 25%, transparent 25%, transparent 75%, rgba(44, 36, 23, 0.04) 75%),
+        #fffaf2;
+      background-size: 24px 24px;
+      background-position: 0 0, 12px 12px;
+      min-height: 420px;
+      max-height: calc(100vh - 120px);
+      display: grid;
+      place-items: center;
+    }
+
+    .canvas {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      max-height: calc(100vh - 120px);
+      display: inline-block;
+      line-height: 0;
+    }
+
+    .canvas img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: calc(100vh - 120px);
+      object-fit: contain;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+
+    .canvas .overlay {
+      position: absolute;
+      inset: 0;
+      opacity: 0.5;
+    }
+
+    .placeholder {
+      padding: 36px;
+      text-align: center;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .legend {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 0.92rem;
+    }
+
+    .legend strong {
+      display: inline-block;
+      margin-right: 6px;
+    }
+
+    .legend-item {
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.65);
+      border: 1px solid rgba(69, 55, 34, 0.1);
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @media (max-width: 900px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .controls {
+        position: static;
+      }
+
+      .stage {
+        min-height: 280px;
+        max-height: none;
+      }
+
+      .canvas,
+      .canvas img {
+        max-height: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="panel hero">
+      <h1>Heatmap Fade Comparator</h1>
+      <p class="lede">
+        Overlay two aligned heatmaps, scrub between them with a slider, or run a continuous fade loop.
+        Open this file directly in a browser, or pass image paths in the URL using
+        <code>?base=heatmap1.png&amp;top=heatmap2.png</code>.
+      </p>
+    </section>
+
+    <section class="layout">
+      <aside class="panel controls">
+        <div class="group">
+          <h2>Images</h2>
+          <label for="baseFile">Base heatmap</label>
+          <input id="baseFile" type="file" accept="image/*">
+          <label for="topFile">Overlay heatmap</label>
+          <input id="topFile" type="file" accept="image/*">
+          <p class="hint">
+            You can upload files here or supply sibling image paths with URL parameters.
+          </p>
+        </div>
+
+        <div class="group">
+          <h2>Labels</h2>
+          <div class="pair">
+            <div>
+              <label for="baseLabel">Base label</label>
+              <input id="baseLabel" type="text" value="Heatmap A">
+            </div>
+            <div>
+              <label for="topLabel">Overlay label</label>
+              <input id="topLabel" type="text" value="Heatmap B">
+            </div>
+          </div>
+        </div>
+
+        <div class="group">
+          <h2>Blend</h2>
+          <div class="inline">
+            <label for="opacity">Overlay opacity</label>
+            <output id="opacityValue" for="opacity">50%</output>
+          </div>
+          <input id="opacity" type="range" min="0" max="100" value="50">
+          <p class="hint">
+            <code>0%</code> shows only the base image. <code>100%</code> shows only the overlay image.
+          </p>
+        </div>
+
+        <div class="group">
+          <h2>Autoplay</h2>
+          <div class="pair">
+            <div>
+              <label for="cycleSeconds">Cycle length (s)</label>
+              <input id="cycleSeconds" type="number" min="1" step="0.5" value="4">
+            </div>
+            <div>
+              <label for="holdSeconds">Endpoint hold (s)</label>
+              <input id="holdSeconds" type="number" min="0" step="0.25" value="0.5">
+            </div>
+          </div>
+          <button id="togglePlayback" type="button">Start cycle</button>
+          <button id="resetView" class="secondary" type="button">Reset to 50%</button>
+          <p class="status" id="status">Waiting for two images.</p>
+        </div>
+
+        <div class="group">
+          <h2>URL Setup</h2>
+          <p class="hint">
+            Use parameters like
+            <code>?base=heatmap1.png&amp;top=heatmap2.png&amp;baseLabel=Observed&amp;topLabel=Predicted</code>
+            when your images live beside this HTML file or on an accessible web server.
+          </p>
+        </div>
+      </aside>
+
+      <section class="panel viewer">
+        <h2>Viewer</h2>
+        <div class="chip-row">
+          <span class="chip">Aligned dimensions recommended</span>
+          <span class="chip">Manual scrub + autoplay</span>
+          <span class="chip">No dependencies</span>
+        </div>
+
+        <div class="stage">
+          <div id="placeholder" class="placeholder">
+            Load two images to start. If they share identical exported dimensions, they will overlay in registration.
+          </div>
+
+          <div id="canvas" class="canvas hidden">
+            <img id="baseImage" alt="Base heatmap">
+            <img id="topImage" class="overlay" alt="Overlay heatmap">
+          </div>
+        </div>
+
+        <div class="legend">
+          <div class="legend-item"><strong>Base:</strong><span id="legendBase">Heatmap A</span></div>
+          <div class="legend-item"><strong>Overlay:</strong><span id="legendTop">Heatmap B</span></div>
+          <div class="legend-item"><strong>Current mix:</strong><span id="legendMix">50% overlay</span></div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script>
+    const state = {
+      animationFrame: null,
+      isPlaying: false,
+      imageUrls: {
+        base: null,
+        top: null
+      }
+    };
+
+    const baseFileInput = document.getElementById("baseFile");
+    const topFileInput = document.getElementById("topFile");
+    const baseLabelInput = document.getElementById("baseLabel");
+    const topLabelInput = document.getElementById("topLabel");
+    const opacityInput = document.getElementById("opacity");
+    const opacityValue = document.getElementById("opacityValue");
+    const cycleSecondsInput = document.getElementById("cycleSeconds");
+    const holdSecondsInput = document.getElementById("holdSeconds");
+    const togglePlaybackButton = document.getElementById("togglePlayback");
+    const resetViewButton = document.getElementById("resetView");
+    const status = document.getElementById("status");
+    const placeholder = document.getElementById("placeholder");
+    const canvas = document.getElementById("canvas");
+    const baseImage = document.getElementById("baseImage");
+    const topImage = document.getElementById("topImage");
+    const legendBase = document.getElementById("legendBase");
+    const legendTop = document.getElementById("legendTop");
+    const legendMix = document.getElementById("legendMix");
+
+    function setStatus(message) {
+      status.textContent = message;
+    }
+
+    function revokeObjectUrl(key) {
+      const existing = state.imageUrls[key];
+      if (existing && existing.startsWith("blob:")) {
+        URL.revokeObjectURL(existing);
+      }
+      state.imageUrls[key] = null;
+    }
+
+    function updateLegend() {
+      legendBase.textContent = baseLabelInput.value || "Heatmap A";
+      legendTop.textContent = topLabelInput.value || "Heatmap B";
+      legendMix.textContent = `${opacityInput.value}% overlay`;
+    }
+
+    function updateOpacity(value) {
+      opacityInput.value = value;
+      topImage.style.opacity = String(value / 100);
+      opacityValue.textContent = `${value}%`;
+      updateLegend();
+    }
+
+    function showCanvasIfReady() {
+      const ready = Boolean(baseImage.src && topImage.src);
+      placeholder.classList.toggle("hidden", ready);
+      canvas.classList.toggle("hidden", !ready);
+      if (ready) {
+        setStatus(state.isPlaying ? "Autoplay active." : "Manual blend ready.");
+      } else {
+        setStatus("Waiting for two images.");
+      }
+    }
+
+    function applyLabelsFromQuery(params) {
+      if (params.has("baseLabel")) {
+        baseLabelInput.value = params.get("baseLabel");
+      }
+      if (params.has("topLabel")) {
+        topLabelInput.value = params.get("topLabel");
+      }
+      updateLegend();
+    }
+
+    function loadImageFromUrl(key, url) {
+      if (!url) return;
+      revokeObjectUrl(key);
+      state.imageUrls[key] = url;
+      if (key === "base") {
+        baseImage.src = url;
+      } else {
+        topImage.src = url;
+      }
+      showCanvasIfReady();
+    }
+
+    function loadImageFromFile(key, file) {
+      if (!file) return;
+      revokeObjectUrl(key);
+      const url = URL.createObjectURL(file);
+      state.imageUrls[key] = url;
+      if (key === "base") {
+        baseImage.src = url;
+      } else {
+        topImage.src = url;
+      }
+      showCanvasIfReady();
+    }
+
+    function stopPlayback() {
+      state.isPlaying = false;
+      togglePlaybackButton.textContent = "Start cycle";
+      if (state.animationFrame !== null) {
+        cancelAnimationFrame(state.animationFrame);
+        state.animationFrame = null;
+      }
+      showCanvasIfReady();
+    }
+
+    function startPlayback() {
+      if (!baseImage.src || !topImage.src) {
+        setStatus("Load both images before starting autoplay.");
+        return;
+      }
+
+      const cycleSeconds = Number(cycleSecondsInput.value);
+      const holdSeconds = Number(holdSecondsInput.value);
+
+      if (!(cycleSeconds > 0) || holdSeconds < 0) {
+        setStatus("Cycle length must be greater than 0 and hold time cannot be negative.");
+        return;
+      }
+
+      state.isPlaying = true;
+      togglePlaybackButton.textContent = "Stop cycle";
+      setStatus("Autoplay active.");
+
+      const travelMs = cycleSeconds * 1000;
+      const holdMs = holdSeconds * 1000;
+      const totalMs = travelMs * 2 + holdMs * 2;
+      const start = performance.now();
+
+      function tick(now) {
+        if (!state.isPlaying) return;
+
+        const elapsed = (now - start) % totalMs;
+        let nextValue = 0;
+
+        if (elapsed < travelMs) {
+          nextValue = (elapsed / travelMs) * 100;
+        } else if (elapsed < travelMs + holdMs) {
+          nextValue = 100;
+        } else if (elapsed < travelMs * 2 + holdMs) {
+          nextValue = 100 - ((elapsed - travelMs - holdMs) / travelMs) * 100;
+        } else {
+          nextValue = 0;
+        }
+
+        updateOpacity(Math.round(nextValue));
+        state.animationFrame = requestAnimationFrame(tick);
+      }
+
+      state.animationFrame = requestAnimationFrame(tick);
+    }
+
+    baseFileInput.addEventListener("change", (event) => {
+      loadImageFromFile("base", event.target.files[0]);
+    });
+
+    topFileInput.addEventListener("change", (event) => {
+      loadImageFromFile("top", event.target.files[0]);
+    });
+
+    baseLabelInput.addEventListener("input", updateLegend);
+    topLabelInput.addEventListener("input", updateLegend);
+
+    opacityInput.addEventListener("input", () => {
+      if (state.isPlaying) {
+        stopPlayback();
+      }
+      updateOpacity(Number(opacityInput.value));
+      showCanvasIfReady();
+    });
+
+    togglePlaybackButton.addEventListener("click", () => {
+      if (state.isPlaying) {
+        stopPlayback();
+      } else {
+        startPlayback();
+      }
+    });
+
+    resetViewButton.addEventListener("click", () => {
+      stopPlayback();
+      updateOpacity(50);
+      showCanvasIfReady();
+    });
+
+    baseImage.addEventListener("load", showCanvasIfReady);
+    topImage.addEventListener("load", showCanvasIfReady);
+
+    const params = new URLSearchParams(window.location.search);
+    applyLabelsFromQuery(params);
+
+    if (params.has("base")) {
+      loadImageFromUrl("base", params.get("base"));
+    }
+    if (params.has("top")) {
+      loadImageFromUrl("top", params.get("top"));
+    }
+
+    updateOpacity(Number(opacityInput.value));
+    updateLegend();
+  </script>
+</body>
+</html>
