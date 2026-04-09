@@ -243,7 +243,7 @@ def generate_html(reports: List[Dict], flagged_mutations: Dict, output_path: str
             flagged_label = '⚠️ Mixed'
         else:
             row_class = ''
-            flagged_label = ''
+            flagged_label = 'pending'
         
         link = f"{base_url}{report['filename']}" if base_url else f"igv_reports/hotspots/{report['filename']}"
         
