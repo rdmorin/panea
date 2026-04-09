@@ -172,6 +172,15 @@
             background-color: #c3e6cb;
         }
         
+        tr.mixed-row {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+        }
+        
+        tr.mixed-row:hover {
+            background-color: #ffe8a3;
+        }
+        
         td.numeric {
             text-align: right;
             font-variant-numeric: tabular-nums;
@@ -318,7 +327,8 @@
                     <th class="sortable" data-column="annotation">Annotation</th>
                     <th class="sortable" data-column="gene">Gene</th>
                     <th class="sortable" data-column="flagged">Review Result</th>
-                    <th class="sortable" data-column="sample-id">Sample ID</th>
+                    <th class="sortable" data-column="flagged-samples">Flagged Samples</th>
+                    <th class="sortable" data-column="passed-samples">Passed Samples</th>
                 </tr>
             </thead>
             <tbody>
@@ -341,7 +351,8 @@
             <td>intronic</td>
             <td>MTOR</td>
             <td class="flagged-status" data-sort="no">✅ Passed</td>
-            <td>NA</td>
+            <td></td>
+            <td>1096, 1102</td>
         </tr>
         
 
@@ -363,7 +374,8 @@
             <td>UTR3</td>
             <td>MCL1</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>1094T, 4940T, 4945T, 6208T</td>
+            <td>1094, 4940, 4945, 6208</td>
+            <td></td>
         </tr>
         
 
@@ -385,7 +397,8 @@
             <td>UTR3</td>
             <td>MCL1</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>1065T, 1094T, 1102T, 11843T, 1284T, 1289T, 19094T, 19096T, 4941T, 4945T, 4946T, 4947T, 4948T, 6106T, 6107T, 6197T, 6207T, 6208T</td>
+            <td>1065, 1094, 1102, 11843, 1284, 1289, 19094, 19096, 4941, 4945, 4946, 4947, 4948, 6106, 6107, 6197, 6207, 6208</td>
+            <td></td>
         </tr>
         
 
@@ -407,7 +420,8 @@
             <td>exonic</td>
             <td>BTG2</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>1059T, 2978T, 6116T</td>
+            <td>1059, 2978, 6116</td>
+            <td></td>
         </tr>
         
 
@@ -429,7 +443,8 @@
             <td>exonic</td>
             <td>BTG2</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>4941T, 4942T</td>
+            <td>4941, 4942</td>
+            <td></td>
         </tr>
         
 
@@ -451,7 +466,8 @@
             <td>intronic</td>
             <td>BTG2</td>
             <td class="flagged-status" data-sort="no">✅ Passed</td>
-            <td>NA</td>
+            <td></td>
+            <td>2965, 2978</td>
         </tr>
         
 
@@ -473,11 +489,12 @@
             <td>intronic</td>
             <td>BTG2</td>
             <td class="flagged-status" data-sort="no">✅ Passed</td>
-            <td>NA</td>
+            <td></td>
+            <td>2989, 4949</td>
         </tr>
         
 
-        <tr class="">
+        <tr class="mixed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr1-203306026-G-T-intronic-BTG2.html" target="_blank">chr1-203306026-G-T</a>
@@ -494,12 +511,13 @@
             <td>G → T</td>
             <td>intronic</td>
             <td>BTG2</td>
-            <td class="flagged-status" data-sort=""></td>
-            <td></td>
+            <td class="flagged-status" data-sort="mixed">⚠️ Mixed</td>
+            <td>2989</td>
+            <td>2980</td>
         </tr>
         
 
-        <tr class="">
+        <tr class="passed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr1-203306158-C-T-intronic-BTG2.html" target="_blank">chr1-203306158-C-T</a>
@@ -516,12 +534,13 @@
             <td>C → T</td>
             <td>intronic</td>
             <td>BTG2</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="no">✅ Passed</td>
             <td></td>
+            <td>2978, 4949</td>
         </tr>
         
 
-        <tr class="">
+        <tr class="passed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr1-203306295-C-T-intronic-BTG2.html" target="_blank">chr1-203306295-C-T</a>
@@ -538,12 +557,13 @@
             <td>C → T</td>
             <td>intronic</td>
             <td>BTG2</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="no">✅ Passed</td>
             <td></td>
+            <td>1294, 2978, 6112</td>
         </tr>
         
 
-        <tr class="">
+        <tr class="passed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr1-203306422-C-T-intronic-BTG2.html" target="_blank">chr1-203306422-C-T</a>
@@ -560,8 +580,9 @@
             <td>C → T</td>
             <td>intronic</td>
             <td>BTG2</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="no">✅ Passed</td>
             <td></td>
+            <td>1294, 2988, 4940</td>
         </tr>
         
 
@@ -583,6 +604,7 @@
             <td>intronic</td>
             <td>BTG2</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -606,6 +628,7 @@
             <td>BTG2</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -627,6 +650,7 @@
             <td>intronic</td>
             <td>BTG2</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -650,6 +674,7 @@
             <td>BTG2</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -672,6 +697,7 @@
             <td>BTG2</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -693,7 +719,8 @@
             <td>splicing</td>
             <td>ID3</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>6197T</td>
+            <td>6197</td>
+            <td></td>
         </tr>
         
 
@@ -715,11 +742,12 @@
             <td>exonic</td>
             <td>ID3</td>
             <td class="flagged-status" data-sort="no">✅ Passed</td>
+            <td></td>
             <td>NA</td>
         </tr>
         
 
-        <tr class="">
+        <tr class="mixed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr1-23559224-TC-T-exonic-ID3.html" target="_blank">chr1-23559224-TC-T</a>
@@ -736,12 +764,13 @@
             <td>TC → T</td>
             <td>exonic</td>
             <td>ID3</td>
-            <td class="flagged-status" data-sort=""></td>
-            <td></td>
+            <td class="flagged-status" data-sort="mixed">⚠️ Mixed</td>
+            <td>6112</td>
+            <td>1102</td>
         </tr>
         
 
-        <tr class="">
+        <tr class="mixed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr1-23559225-C-T-exonic-ID3.html" target="_blank">chr1-23559225-C-T</a>
@@ -758,12 +787,13 @@
             <td>C → T</td>
             <td>exonic</td>
             <td>ID3</td>
-            <td class="flagged-status" data-sort=""></td>
-            <td></td>
+            <td class="flagged-status" data-sort="mixed">⚠️ Mixed</td>
+            <td>1066, 4946</td>
+            <td>1102</td>
         </tr>
         
 
-        <tr class="">
+        <tr class="passed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr1-23559232-G-C-exonic-ID3.html" target="_blank">chr1-23559232-G-C</a>
@@ -780,12 +810,13 @@
             <td>G → C</td>
             <td>exonic</td>
             <td>ID3</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="no">✅ Passed</td>
             <td></td>
+            <td>2967, 6112</td>
         </tr>
         
 
-        <tr class="">
+        <tr class="mixed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr1-23559260-G-A-exonic-ID3.html" target="_blank">chr1-23559260-G-A</a>
@@ -802,12 +833,13 @@
             <td>G → A</td>
             <td>exonic</td>
             <td>ID3</td>
-            <td class="flagged-status" data-sort=""></td>
-            <td></td>
+            <td class="flagged-status" data-sort="mixed">⚠️ Mixed</td>
+            <td>1065, 1066, 4948</td>
+            <td>1064</td>
         </tr>
         
 
-        <tr class="">
+        <tr class="mixed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr1-23559261-G-A-exonic-ID3.html" target="_blank">chr1-23559261-G-A</a>
@@ -824,12 +856,13 @@
             <td>G → A</td>
             <td>exonic</td>
             <td>ID3</td>
-            <td class="flagged-status" data-sort=""></td>
-            <td></td>
+            <td class="flagged-status" data-sort="mixed">⚠️ Mixed</td>
+            <td>1102, 12132, 6112, 6197</td>
+            <td>11843</td>
         </tr>
         
 
-        <tr class="">
+        <tr class="mixed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr1-23559261-G-C-exonic-ID3.html" target="_blank">chr1-23559261-G-C</a>
@@ -846,12 +879,13 @@
             <td>G → C</td>
             <td>exonic</td>
             <td>ID3</td>
-            <td class="flagged-status" data-sort=""></td>
-            <td></td>
+            <td class="flagged-status" data-sort="mixed">⚠️ Mixed</td>
+            <td>6112</td>
+            <td>6207</td>
         </tr>
         
 
-        <tr class="">
+        <tr class="passed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr1-23559270-C-A-exonic-ID3.html" target="_blank">chr1-23559270-C-A</a>
@@ -868,12 +902,13 @@
             <td>C → A</td>
             <td>exonic</td>
             <td>ID3</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="no">✅ Passed</td>
             <td></td>
+            <td>2975, 4946</td>
         </tr>
         
 
-        <tr class="">
+        <tr class="mixed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr1-23559273-G-A-exonic-ID3.html" target="_blank">chr1-23559273-G-A</a>
@@ -890,12 +925,13 @@
             <td>G → A</td>
             <td>exonic</td>
             <td>ID3</td>
-            <td class="flagged-status" data-sort=""></td>
-            <td></td>
+            <td class="flagged-status" data-sort="mixed">⚠️ Mixed</td>
+            <td>1102, 4940</td>
+            <td>1090</td>
         </tr>
         
 
-        <tr class="">
+        <tr class="passed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr1-23559283-G-C-exonic-ID3.html" target="_blank">chr1-23559283-G-C</a>
@@ -912,12 +948,13 @@
             <td>G → C</td>
             <td>exonic</td>
             <td>ID3</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="no">✅ Passed</td>
             <td></td>
+            <td>1060, 2986</td>
         </tr>
         
 
-        <tr class="">
+        <tr class="passed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr1-23559284-T-G-exonic-ID3.html" target="_blank">chr1-23559284-T-G</a>
@@ -934,12 +971,13 @@
             <td>T → G</td>
             <td>exonic</td>
             <td>ID3</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="no">✅ Passed</td>
             <td></td>
+            <td>2974, 2976</td>
         </tr>
         
 
-        <tr class="flagged-row">
+        <tr class="mixed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr1-244851976-C-T-UTR3-HNRNPU.html" target="_blank">chr1-244851976-C-T</a>
@@ -956,8 +994,9 @@
             <td>C → T</td>
             <td>UTR3</td>
             <td>HNRNPU</td>
-            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>4947T</td>
+            <td class="flagged-status" data-sort="mixed">⚠️ Mixed</td>
+            <td>4947</td>
+            <td>1104</td>
         </tr>
         
 
@@ -979,7 +1018,8 @@
             <td>exonic</td>
             <td>HNRNPU</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>1065T, 4947T</td>
+            <td>1065, 4947</td>
+            <td></td>
         </tr>
         
 
@@ -1001,7 +1041,8 @@
             <td>intronic</td>
             <td>HNRNPU</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>1094T, 4940T, 6108T</td>
+            <td>1094, 4940, 6108</td>
+            <td></td>
         </tr>
         
 
@@ -1023,6 +1064,7 @@
             <td>intronic</td>
             <td>HNRNPU</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -1046,6 +1088,7 @@
             <td>HNRNPU</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -1067,6 +1110,7 @@
             <td>intronic</td>
             <td>HNRNPU</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -1090,6 +1134,7 @@
             <td>HNRNPU</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -1111,6 +1156,7 @@
             <td>intronic</td>
             <td>HNRNPU</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -1134,6 +1180,7 @@
             <td>HNRNPU</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -1155,6 +1202,7 @@
             <td>exonic</td>
             <td>HNRNPU</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -1178,6 +1226,7 @@
             <td>HNRNPU</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -1199,7 +1248,8 @@
             <td>UTR3</td>
             <td>ARID1A</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>1059T, 1102T, 1285T</td>
+            <td>1059, 1102, 1285</td>
+            <td></td>
         </tr>
         
 
@@ -1221,6 +1271,7 @@
             <td>UTR3</td>
             <td>ARID1A</td>
             <td class="flagged-status" data-sort="no">✅ Passed</td>
+            <td></td>
             <td>NA</td>
         </tr>
         
@@ -1243,11 +1294,12 @@
             <td>UTR3</td>
             <td>ARID1A</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>1059T, 1102T, 1285T</td>
+            <td>1059, 1102, 1285</td>
+            <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="mixed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr10-87960907-A-C-exonic-PTEN.html" target="_blank">chr10-87960907-A-C</a>
@@ -1264,8 +1316,9 @@
             <td>A → C</td>
             <td>exonic</td>
             <td>PTEN</td>
-            <td class="flagged-status" data-sort=""></td>
-            <td></td>
+            <td class="flagged-status" data-sort="mixed">⚠️ Mixed</td>
+            <td>2972, 2977</td>
+            <td>1065</td>
         </tr>
         
 
@@ -1287,6 +1340,7 @@
             <td>exonic</td>
             <td>ETS1</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -1310,6 +1364,7 @@
             <td>ETS1</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -1331,6 +1386,7 @@
             <td>exonic</td>
             <td>ETS1</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -1354,6 +1410,7 @@
             <td>ETS1</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -1375,6 +1432,7 @@
             <td>exonic</td>
             <td>ETS1</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -1398,6 +1456,7 @@
             <td>ETS1</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -1419,6 +1478,7 @@
             <td>upstream</td>
             <td>DTX1</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -1442,6 +1502,7 @@
             <td>DTX1</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -1463,6 +1524,7 @@
             <td>UTR5</td>
             <td>DTX1</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -1486,6 +1548,7 @@
             <td>DTX1</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -1507,6 +1570,7 @@
             <td>exonic</td>
             <td>DTX1</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -1530,6 +1594,7 @@
             <td>DTX1</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -1551,6 +1616,7 @@
             <td>exonic</td>
             <td>DTX1</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -1574,6 +1640,7 @@
             <td>BCL7A</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -1595,6 +1662,7 @@
             <td>UTR5</td>
             <td>BCL7A</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -1618,6 +1686,7 @@
             <td>BCL7A</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -1639,6 +1708,7 @@
             <td>intronic</td>
             <td>BCL7A</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -1662,6 +1732,7 @@
             <td>BCL7A</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -1683,6 +1754,7 @@
             <td>intronic</td>
             <td>BCL7A</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -1706,6 +1778,7 @@
             <td>BCL7A</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -1727,6 +1800,7 @@
             <td>UTR3</td>
             <td>BCL7A</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -1750,6 +1824,7 @@
             <td>KMT2D</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -1771,6 +1846,7 @@
             <td>exonic</td>
             <td>KMT2D</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -1794,6 +1870,7 @@
             <td>KMT2D</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -1815,6 +1892,7 @@
             <td>exonic</td>
             <td>KMT2D</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -1838,6 +1916,7 @@
             <td>FOXO1</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -1859,6 +1938,7 @@
             <td>exonic</td>
             <td>FOXO1</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -1882,6 +1962,7 @@
             <td>FOXO1</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -1903,6 +1984,7 @@
             <td>exonic</td>
             <td>FOXO1</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -1926,6 +2008,7 @@
             <td>FOXO1</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -1947,6 +2030,7 @@
             <td>intronic</td>
             <td>CHD8</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -1970,6 +2054,7 @@
             <td>CHD8</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -1991,6 +2076,7 @@
             <td>intronic</td>
             <td>CHD8</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -2014,6 +2100,7 @@
             <td>TCL1A</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -2035,6 +2122,7 @@
             <td>intronic</td>
             <td>TCL1A</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -2058,6 +2146,7 @@
             <td>TCL1A</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -2079,6 +2168,7 @@
             <td>UTR3</td>
             <td>SIN3A</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -2102,6 +2192,7 @@
             <td>SIN3A</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -2123,6 +2214,7 @@
             <td>intronic</td>
             <td>SIN3A</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -2146,6 +2238,7 @@
             <td>SIN3A</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -2167,6 +2260,7 @@
             <td>exonic</td>
             <td>SIN3A</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -2190,6 +2284,7 @@
             <td>SIN3A</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -2211,6 +2306,7 @@
             <td>intronic</td>
             <td>SIN3A</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -2234,6 +2330,7 @@
             <td>SIN3A</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -2255,6 +2352,7 @@
             <td>intronic</td>
             <td>CREBBP</td>
             <td class="flagged-status" data-sort="no">✅ Passed</td>
+            <td></td>
             <td>NA</td>
         </tr>
         
@@ -2277,7 +2375,8 @@
             <td>exonic</td>
             <td>CREBBP</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>6199T</td>
+            <td>6199</td>
+            <td></td>
         </tr>
         
 
@@ -2299,6 +2398,7 @@
             <td>exonic</td>
             <td>TFAP4</td>
             <td class="flagged-status" data-sort="no">✅ Passed</td>
+            <td></td>
             <td>NA</td>
         </tr>
         
@@ -2321,7 +2421,8 @@
             <td>intronic</td>
             <td>CTCF</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>11841T, 11843T, 1282T, 4940T</td>
+            <td>11841, 11843, 1282, 4940</td>
+            <td></td>
         </tr>
         
 
@@ -2343,7 +2444,8 @@
             <td>intronic</td>
             <td>CTCF</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>1289T, 4942T</td>
+            <td>1289, 4942</td>
+            <td></td>
         </tr>
         
 
@@ -2365,7 +2467,8 @@
             <td>intronic</td>
             <td>CTCF</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>19094T, 4942T, 4945T</td>
+            <td>19094, 4942, 4945</td>
+            <td></td>
         </tr>
         
 
@@ -2387,7 +2490,8 @@
             <td>intronic</td>
             <td>CTCF</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>1094T, 4942T</td>
+            <td>1094, 4942</td>
+            <td></td>
         </tr>
         
 
@@ -2409,7 +2513,8 @@
             <td>intronic</td>
             <td>CTCF</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>11843T, 1293T, 1297T, 4941T</td>
+            <td>11843, 1293, 1297, 4941</td>
+            <td></td>
         </tr>
         
 
@@ -2431,7 +2536,8 @@
             <td>intronic</td>
             <td>CTCF</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>6107T, 6197T</td>
+            <td>6107, 6197</td>
+            <td></td>
         </tr>
         
 
@@ -2453,7 +2559,8 @@
             <td>intronic</td>
             <td>CTCF</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>11843T, 1276T, 1282T, 4942T</td>
+            <td>11843, 1276, 1282, 4942</td>
+            <td></td>
         </tr>
         
 
@@ -2475,7 +2582,8 @@
             <td>intronic</td>
             <td>CTCF</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>11841T</td>
+            <td>11841</td>
+            <td></td>
         </tr>
         
 
@@ -2497,11 +2605,12 @@
             <td>intronic</td>
             <td>CTCF</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>11841T</td>
+            <td>11841</td>
+            <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="mixed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr16-69269839-A-G-intronic-SNTB2.html" target="_blank">chr16-69269839-A-G</a>
@@ -2518,12 +2627,13 @@
             <td>A → G</td>
             <td>intronic</td>
             <td>SNTB2</td>
-            <td class="flagged-status" data-sort=""></td>
-            <td></td>
+            <td class="flagged-status" data-sort="mixed">⚠️ Mixed</td>
+            <td>1276, 4942, 4945</td>
+            <td>4940, 4944, 4946, 4947, 6207</td>
         </tr>
         
 
-        <tr class="">
+        <tr class="passed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr16-69303059-T-G-UTR3-SNTB2.html" target="_blank">chr16-69303059-T-G</a>
@@ -2540,12 +2650,13 @@
             <td>T → G</td>
             <td>UTR3</td>
             <td>SNTB2</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="no">✅ Passed</td>
             <td></td>
+            <td>1063, 4940, 4942, 4945, 4949</td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr16-69303075-T-C-UTR3-SNTB2.html" target="_blank">chr16-69303075-T-C</a>
@@ -2562,12 +2673,13 @@
             <td>T → C</td>
             <td>UTR3</td>
             <td>SNTB2</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>12132, 4940, 4942, 4945, 4946, 4948, 4949, 6199, 6207</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr16-69303109-C-T-UTR3-SNTB2.html" target="_blank">chr16-69303109-C-T</a>
@@ -2584,12 +2696,13 @@
             <td>C → T</td>
             <td>UTR3</td>
             <td>SNTB2</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>1295, 4942, 4945, 4946</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr16-69303118-T-C-UTR3-SNTB2.html" target="_blank">chr16-69303118-T-C</a>
@@ -2606,12 +2719,13 @@
             <td>T → C</td>
             <td>UTR3</td>
             <td>SNTB2</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>4940, 4942, 4946, 6107, 6207</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr16-69303142-T-C-UTR3-SNTB2.html" target="_blank">chr16-69303142-T-C</a>
@@ -2628,12 +2742,13 @@
             <td>T → C</td>
             <td>UTR3</td>
             <td>SNTB2</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>11843, 12132, 1282, 19094, 4940, 4942, 4944, 4945, 4946, 6107, 6113, 6207</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr16-69303154-C-A-UTR3-SNTB2.html" target="_blank">chr16-69303154-C-A</a>
@@ -2650,12 +2765,13 @@
             <td>C → A</td>
             <td>UTR3</td>
             <td>SNTB2</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>11843, 1276, 4940, 4942, 4945, 4946, 6197</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr16-69304695-A-G-UTR3-SNTB2.html" target="_blank">chr16-69304695-A-G</a>
@@ -2672,12 +2788,13 @@
             <td>A → G</td>
             <td>UTR3</td>
             <td>SNTB2</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>1066, 1284, 4946, 4947, 4949, 6116</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr16-69306661-T-C-UTR3-SNTB2.html" target="_blank">chr16-69306661-T-C</a>
@@ -2694,12 +2811,13 @@
             <td>T → C</td>
             <td>UTR3</td>
             <td>SNTB2</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>4940, 4945</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr16-69306843-G-A-UTR3-SNTB2.html" target="_blank">chr16-69306843-G-A</a>
@@ -2716,12 +2834,13 @@
             <td>G → A</td>
             <td>UTR3</td>
             <td>SNTB2</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>4945, 4948, 4949, 6103, 6207</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr16-69307729-T-G-UTR3-SNTB2.html" target="_blank">chr16-69307729-T-G</a>
@@ -2738,12 +2857,13 @@
             <td>T → G</td>
             <td>UTR3</td>
             <td>SNTB2</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>1276, 4940, 4942</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr16-81897744-T-C-intronic-PLCG2.html" target="_blank">chr16-81897744-T-C</a>
@@ -2760,12 +2880,13 @@
             <td>T → C</td>
             <td>intronic</td>
             <td>PLCG2</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>19094, 19096, 4941, 4944, 4945, 4948, 6102, 6106, 6107, 6199</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="passed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr16-8895573-G-C-intronic-USP7.html" target="_blank">chr16-8895573-G-C</a>
@@ -2782,12 +2903,13 @@
             <td>G → C</td>
             <td>intronic</td>
             <td>USP7</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="no">✅ Passed</td>
             <td></td>
+            <td>1094, 1288</td>
         </tr>
         
 
-        <tr class="">
+        <tr class="mixed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr17-39758604-G-A-UTR3-IKZF3.html" target="_blank">chr17-39758604-G-A</a>
@@ -2804,12 +2926,13 @@
             <td>G → A</td>
             <td>UTR3</td>
             <td>IKZF3</td>
-            <td class="flagged-status" data-sort=""></td>
-            <td></td>
+            <td class="flagged-status" data-sort="mixed">⚠️ Mixed</td>
+            <td>6208</td>
+            <td>1288</td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr17-39760779-G-A-UTR3-IKZF3.html" target="_blank">chr17-39760779-G-A</a>
@@ -2826,12 +2949,13 @@
             <td>G → A</td>
             <td>UTR3</td>
             <td>IKZF3</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>1094, 11843, 1275, 4940, 4945, 4946, 4947, 4949</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="mixed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr17-39761708-G-A-UTR3-IKZF3.html" target="_blank">chr17-39761708-G-A</a>
@@ -2848,12 +2972,13 @@
             <td>G → A</td>
             <td>UTR3</td>
             <td>IKZF3</td>
-            <td class="flagged-status" data-sort=""></td>
-            <td></td>
+            <td class="flagged-status" data-sort="mixed">⚠️ Mixed</td>
+            <td>6116</td>
+            <td>1288</td>
         </tr>
         
 
-        <tr class="">
+        <tr class="mixed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr17-39762643-G-T-UTR3-IKZF3.html" target="_blank">chr17-39762643-G-T</a>
@@ -2870,12 +2995,13 @@
             <td>G → T</td>
             <td>UTR3</td>
             <td>IKZF3</td>
-            <td class="flagged-status" data-sort=""></td>
-            <td></td>
+            <td class="flagged-status" data-sort="mixed">⚠️ Mixed</td>
+            <td>4940, 4941, 4942, 4946, 4947, 4949, 6107, 6111, 6113, 6197</td>
+            <td>1282, 19094</td>
         </tr>
         
 
-        <tr class="">
+        <tr class="mixed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr17-39765677-G-A-UTR3-IKZF3.html" target="_blank">chr17-39765677-G-A</a>
@@ -2892,12 +3018,13 @@
             <td>G → A</td>
             <td>UTR3</td>
             <td>IKZF3</td>
-            <td class="flagged-status" data-sort=""></td>
-            <td></td>
+            <td class="flagged-status" data-sort="mixed">⚠️ Mixed</td>
+            <td>4945, 4949</td>
+            <td>1288</td>
         </tr>
         
 
-        <tr class="">
+        <tr class="passed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr17-39788322-A-T-exonic-IKZF3.html" target="_blank">chr17-39788322-A-T</a>
@@ -2914,12 +3041,13 @@
             <td>A → T</td>
             <td>exonic</td>
             <td>IKZF3</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="no">✅ Passed</td>
             <td></td>
+            <td>2968, 2988</td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr17-63930388-G-T-intronic-CD79B.html" target="_blank">chr17-63930388-G-T</a>
@@ -2936,12 +3064,13 @@
             <td>G → T</td>
             <td>intronic</td>
             <td>CD79B</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>1102, 1289, 4945, 4947</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="passed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr17-65018251-A-C-splicing-GNA13.html" target="_blank">chr17-65018251-A-C</a>
@@ -2958,12 +3087,13 @@
             <td>A → C</td>
             <td>splicing</td>
             <td>GNA13</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="no">✅ Passed</td>
             <td></td>
+            <td>2974, 4944</td>
         </tr>
         
 
-        <tr class="">
+        <tr class="mixed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr17-65041389-G-C-intronic-GNA13.html" target="_blank">chr17-65041389-G-C</a>
@@ -2980,12 +3110,13 @@
             <td>G → C</td>
             <td>intronic</td>
             <td>GNA13</td>
-            <td class="flagged-status" data-sort=""></td>
-            <td></td>
+            <td class="flagged-status" data-sort="mixed">⚠️ Mixed</td>
+            <td>1296</td>
+            <td>1096</td>
         </tr>
         
 
-        <tr class="">
+        <tr class="mixed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr17-65056515-G-A-exonic-GNA13.html" target="_blank">chr17-65056515-G-A</a>
@@ -3002,12 +3133,13 @@
             <td>G → A</td>
             <td>exonic</td>
             <td>GNA13</td>
-            <td class="flagged-status" data-sort=""></td>
-            <td></td>
+            <td class="flagged-status" data-sort="mixed">⚠️ Mixed</td>
+            <td>12132, 4942, 4945, 4947, 4948, 6107, 6115, 6116, 6197</td>
+            <td>1282</td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr17-7576584-G-A-exonic-EIF4A1.html" target="_blank">chr17-7576584-G-A</a>
@@ -3024,7 +3156,8 @@
             <td>G → A</td>
             <td>exonic</td>
             <td>EIF4A1</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>4940, 6115, 6116, 6197</td>
             <td></td>
         </tr>
         
@@ -3048,6 +3181,7 @@
             <td>TP53</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -3070,6 +3204,7 @@
             <td>TP53</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -3091,7 +3226,8 @@
             <td>exonic</td>
             <td>ALPK2</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>2972T</td>
+            <td>2972</td>
+            <td></td>
         </tr>
         
 
@@ -3113,7 +3249,8 @@
             <td>intronic</td>
             <td>DNMT1</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>1096T, 19094T</td>
+            <td>1096, 19094</td>
+            <td></td>
         </tr>
         
 
@@ -3135,11 +3272,12 @@
             <td>exonic</td>
             <td>DNMT1</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>1066T, 1102T, 4949T</td>
+            <td>1066, 1102, 4949</td>
+            <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr19-10140400-C-T-intronic-DNMT1.html" target="_blank">chr19-10140400-C-T</a>
@@ -3156,12 +3294,13 @@
             <td>C → T</td>
             <td>intronic</td>
             <td>DNMT1</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>11843, 4940, 4944, 6102, 6113, 6197, 6208</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr19-10140401-G-A-intronic-DNMT1.html" target="_blank">chr19-10140401-G-A</a>
@@ -3178,12 +3317,13 @@
             <td>G → A</td>
             <td>intronic</td>
             <td>DNMT1</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>4941, 4942, 6102, 6107, 6108</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr19-10140409-A-G-intronic-DNMT1.html" target="_blank">chr19-10140409-A-G</a>
@@ -3200,12 +3340,13 @@
             <td>A → G</td>
             <td>intronic</td>
             <td>DNMT1</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>12132, 1276, 19094, 4941, 4942, 4945, 6102, 6107, 6108, 6197, 6199, 6208</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr19-10140651-C-A-intronic-DNMT1.html" target="_blank">chr19-10140651-C-A</a>
@@ -3222,12 +3363,13 @@
             <td>C → A</td>
             <td>intronic</td>
             <td>DNMT1</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>1294, 4941, 4942, 4943, 4945, 4946, 4948, 4949, 6102, 6107, 6112, 6197, 6199</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr19-10144045-G-T-intronic-DNMT1.html" target="_blank">chr19-10144045-G-T</a>
@@ -3244,12 +3386,13 @@
             <td>G → T</td>
             <td>intronic</td>
             <td>DNMT1</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>1097, 1102, 4943</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr19-10144173-A-G-intronic-DNMT1.html" target="_blank">chr19-10144173-A-G</a>
@@ -3266,12 +3409,13 @@
             <td>A → G</td>
             <td>intronic</td>
             <td>DNMT1</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>11841, 11843, 1276, 1297, 4940, 4941, 4942, 4945, 4946, 6107, 6207</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr19-10144213-C-G-intronic-DNMT1.html" target="_blank">chr19-10144213-C-G</a>
@@ -3288,12 +3432,13 @@
             <td>C → G</td>
             <td>intronic</td>
             <td>DNMT1</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>11843, 19094, 4942, 4949, 6103, 6107, 6111, 6113, 6207</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr19-10144290-T-C-intronic-DNMT1.html" target="_blank">chr19-10144290-T-C</a>
@@ -3310,12 +3455,13 @@
             <td>T → C</td>
             <td>intronic</td>
             <td>DNMT1</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>1297, 19094, 4947, 6108, 6112, 6197, 6207</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr19-10149090-G-A-intronic-DNMT1.html" target="_blank">chr19-10149090-G-A</a>
@@ -3332,12 +3478,13 @@
             <td>G → A</td>
             <td>intronic</td>
             <td>DNMT1</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>12132, 19094, 4940, 4942, 4949, 6199</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr19-10151893-T-C-intronic-DNMT1.html" target="_blank">chr19-10151893-T-C</a>
@@ -3354,12 +3501,13 @@
             <td>T → C</td>
             <td>intronic</td>
             <td>DNMT1</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>11841, 11843, 1297, 4942, 4949, 6106, 6107, 6197, 6207</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr19-10156261-C-G-intronic-DNMT1.html" target="_blank">chr19-10156261-C-G</a>
@@ -3376,12 +3524,13 @@
             <td>C → G</td>
             <td>intronic</td>
             <td>DNMT1</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>1289, 19094, 4942, 4949, 6107</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr19-10156325-A-G-intronic-DNMT1.html" target="_blank">chr19-10156325-A-G</a>
@@ -3398,12 +3547,13 @@
             <td>A → G</td>
             <td>intronic</td>
             <td>DNMT1</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>12132, 1297, 4942, 4946, 6197</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr19-10159442-G-C-intronic-DNMT1.html" target="_blank">chr19-10159442-G-C</a>
@@ -3420,12 +3570,13 @@
             <td>G → C</td>
             <td>intronic</td>
             <td>DNMT1</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>1276, 1282, 1295, 19096, 4940, 4946, 4948, 4949, 6207</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr19-10159454-T-C-intronic-DNMT1.html" target="_blank">chr19-10159454-T-C</a>
@@ -3442,12 +3593,13 @@
             <td>T → C</td>
             <td>intronic</td>
             <td>DNMT1</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>1276, 1295, 4945, 4946, 6107</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr19-10162553-C-A-intronic-DNMT1.html" target="_blank">chr19-10162553-C-A</a>
@@ -3464,12 +3616,13 @@
             <td>C → A</td>
             <td>intronic</td>
             <td>DNMT1</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>11843, 4940, 4942, 4945, 4946, 6102, 6107, 6197, 6207</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr19-10162594-G-C-intronic-DNMT1.html" target="_blank">chr19-10162594-G-C</a>
@@ -3486,12 +3639,13 @@
             <td>G → C</td>
             <td>intronic</td>
             <td>DNMT1</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>11841, 1275, 19095, 4941, 4943, 4944, 4945, 4949, 6107, 6111</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr19-10163208-T-C-intronic-DNMT1.html" target="_blank">chr19-10163208-T-C</a>
@@ -3508,12 +3662,13 @@
             <td>T → C</td>
             <td>intronic</td>
             <td>DNMT1</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>12132, 1282, 1295, 19096, 4940, 4941, 4942, 4944, 4945, 4946, 4948, 4949, 6102, 6107, 6113, 6197, 6207</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr19-10163214-A-G-intronic-DNMT1.html" target="_blank">chr19-10163214-A-G</a>
@@ -3530,12 +3685,13 @@
             <td>A → G</td>
             <td>intronic</td>
             <td>DNMT1</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>4942, 4944, 4945</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr19-10163219-A-G-intronic-DNMT1.html" target="_blank">chr19-10163219-A-G</a>
@@ -3552,12 +3708,13 @@
             <td>A → G</td>
             <td>intronic</td>
             <td>DNMT1</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>1295, 4940, 4941, 4942, 4949, 6102</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr19-10168057-G-A-intronic-DNMT1.html" target="_blank">chr19-10168057-G-A</a>
@@ -3574,12 +3731,13 @@
             <td>G → A</td>
             <td>intronic</td>
             <td>DNMT1</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>1276, 1297, 2979, 4940, 4942, 4946, 4949, 6197</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr19-10173161-G-A-exonic-DNMT1.html" target="_blank">chr19-10173161-G-A</a>
@@ -3596,12 +3754,13 @@
             <td>G → A</td>
             <td>exonic</td>
             <td>DNMT1</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>1288, 4940, 4942, 6116</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr19-10173665-A-T-intronic-DNMT1.html" target="_blank">chr19-10173665-A-T</a>
@@ -3618,12 +3777,13 @@
             <td>A → T</td>
             <td>intronic</td>
             <td>DNMT1</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>1276, 19095, 4941, 4942, 4945, 4946, 4948, 4949, 6102, 6103, 6106, 6107, 6113, 6197, 6199, 6208</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr19-10173689-G-A-intronic-DNMT1.html" target="_blank">chr19-10173689-G-A</a>
@@ -3640,12 +3800,13 @@
             <td>G → A</td>
             <td>intronic</td>
             <td>DNMT1</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>1289, 1297, 19095, 19096, 4940, 4941, 4942, 4945, 4946, 4949, 6102, 6107, 6108, 6197</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="flagged-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr19-10173772-A-G-intronic-DNMT1.html" target="_blank">chr19-10173772-A-G</a>
@@ -3662,12 +3823,13 @@
             <td>A → G</td>
             <td>intronic</td>
             <td>DNMT1</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
+            <td>1276, 1294, 4942, 4945, 4946</td>
             <td></td>
         </tr>
         
 
-        <tr class="">
+        <tr class="passed-row">
             <td class="mutation-id">
                 <div class="mutation-id-cell">
                     <a href="igv_reports/hotspots/chr19-10230212-C-T-intronic-S1PR2.html" target="_blank">chr19-10230212-C-T</a>
@@ -3684,8 +3846,9 @@
             <td>C → T</td>
             <td>intronic</td>
             <td>S1PR2</td>
-            <td class="flagged-status" data-sort=""></td>
+            <td class="flagged-status" data-sort="no">✅ Passed</td>
             <td></td>
+            <td>1097, 2964</td>
         </tr>
         
 
@@ -3707,6 +3870,7 @@
             <td>exonic</td>
             <td>SMARCA4</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -3730,6 +3894,7 @@
             <td>SMARCA4</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -3751,6 +3916,7 @@
             <td>exonic</td>
             <td>SMARCA4</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -3774,6 +3940,7 @@
             <td>SMARCA4</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -3795,6 +3962,7 @@
             <td>exonic</td>
             <td>SMARCA4</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -3818,6 +3986,7 @@
             <td>SMARCA4</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -3839,6 +4008,7 @@
             <td>UTR3</td>
             <td>SMARCA4</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -3862,6 +4032,7 @@
             <td>SMARCA4</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -3883,6 +4054,7 @@
             <td>UTR3</td>
             <td>TCF3</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -3906,6 +4078,7 @@
             <td>TCF3</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -3927,6 +4100,7 @@
             <td>exonic</td>
             <td>TCF3</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -3950,6 +4124,7 @@
             <td>CD70</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -3971,6 +4146,7 @@
             <td>exonic</td>
             <td>CD70</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -3994,6 +4170,7 @@
             <td>CXCR4</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -4015,6 +4192,7 @@
             <td>intronic</td>
             <td>FBXO11</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -4038,6 +4216,7 @@
             <td>FBXO11</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -4059,6 +4238,7 @@
             <td>intronic</td>
             <td>FBXO11</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -4082,6 +4262,7 @@
             <td>PCBP1</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -4103,6 +4284,7 @@
             <td>UTR3</td>
             <td>BMP7</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -4126,6 +4308,7 @@
             <td>BMP7</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -4147,6 +4330,7 @@
             <td>UTR5</td>
             <td>IGLL5</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -4170,6 +4354,7 @@
             <td>IGLL5</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -4191,6 +4376,7 @@
             <td>UTR5</td>
             <td>IGLL5</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -4214,6 +4400,7 @@
             <td>IGLL5</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -4235,6 +4422,7 @@
             <td>UTR5</td>
             <td>IGLL5</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -4258,6 +4446,7 @@
             <td>IGLL5</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -4279,6 +4468,7 @@
             <td>exonic</td>
             <td>IGLL5</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -4302,6 +4492,7 @@
             <td>IGLL5</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -4323,6 +4514,7 @@
             <td>exonic</td>
             <td>IGLL5</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -4346,6 +4538,7 @@
             <td>IGLL5</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -4367,6 +4560,7 @@
             <td>intronic</td>
             <td>IGLL5</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -4390,6 +4584,7 @@
             <td>IGLL5</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -4411,6 +4606,7 @@
             <td>intronic</td>
             <td>IGLL5</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -4434,6 +4630,7 @@
             <td>IGLL5</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -4455,6 +4652,7 @@
             <td>intronic</td>
             <td>IGLL5</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -4478,6 +4676,7 @@
             <td>IGLL5</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -4499,6 +4698,7 @@
             <td>intronic</td>
             <td>IGLL5</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -4522,6 +4722,7 @@
             <td>IGLL5</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -4543,6 +4744,7 @@
             <td>intronic</td>
             <td>IGLL5</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -4566,6 +4768,7 @@
             <td>IGLL5</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -4587,6 +4790,7 @@
             <td>exonic</td>
             <td>IGLL5</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -4610,6 +4814,7 @@
             <td>IGLL5</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -4631,6 +4836,7 @@
             <td>intronic</td>
             <td>IGLL5</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -4654,6 +4860,7 @@
             <td>IGLL5</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -4675,6 +4882,7 @@
             <td>intronic</td>
             <td>BCR</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -4698,6 +4906,7 @@
             <td>BCR</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -4719,6 +4928,7 @@
             <td>intronic</td>
             <td>BCR</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -4742,6 +4952,7 @@
             <td>BCR</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -4763,6 +4974,7 @@
             <td>intronic</td>
             <td>MME</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -4786,6 +4998,7 @@
             <td>MME</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -4807,6 +5020,7 @@
             <td>UTR3</td>
             <td>MME</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -4830,6 +5044,7 @@
             <td>BCL6</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -4851,6 +5066,7 @@
             <td>exonic</td>
             <td>BCL6</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -4874,6 +5090,7 @@
             <td>BCL6</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -4895,6 +5112,7 @@
             <td>intronic</td>
             <td>BCL6</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -4918,6 +5136,7 @@
             <td>BCL6</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -4939,6 +5158,7 @@
             <td>intronic</td>
             <td>BCL6</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -4962,6 +5182,7 @@
             <td>BCL6</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -4983,6 +5204,7 @@
             <td>intronic</td>
             <td>BCL6</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -5006,6 +5228,7 @@
             <td>BCL6</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -5027,6 +5250,7 @@
             <td>UTR5</td>
             <td>BCL6</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -5050,6 +5274,7 @@
             <td>BCL6</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -5071,6 +5296,7 @@
             <td>UTR5</td>
             <td>BCL6</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -5094,6 +5320,7 @@
             <td>RHOA</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -5115,6 +5342,7 @@
             <td>exonic</td>
             <td>RHOA</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -5138,6 +5366,7 @@
             <td>RHOA</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -5159,6 +5388,7 @@
             <td>exonic</td>
             <td>GNAI2</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -5182,6 +5412,7 @@
             <td>GNAI2</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -5203,6 +5434,7 @@
             <td>exonic</td>
             <td>GNAI2</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -5226,6 +5458,7 @@
             <td>GNAI2</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -5247,6 +5480,7 @@
             <td>exonic</td>
             <td>GNAI2</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -5270,6 +5504,7 @@
             <td>PCDHA11</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -5291,6 +5526,7 @@
             <td>intronic</td>
             <td>PIK3R1</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -5314,6 +5550,7 @@
             <td>PIK3R1</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -5335,6 +5572,7 @@
             <td>intronic</td>
             <td>RNF144B</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -5358,6 +5596,7 @@
             <td>RNF144B</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -5379,6 +5618,7 @@
             <td>UTR3</td>
             <td>RNF144B</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -5402,6 +5642,7 @@
             <td>RNF144B</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -5423,6 +5664,7 @@
             <td>UTR3</td>
             <td>RNF144B</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -5446,6 +5688,7 @@
             <td>RNF144B</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -5467,7 +5710,8 @@
             <td>exonic</td>
             <td>HIST1H1C</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>1066T, 4940T, 4942T</td>
+            <td>1066, 4940, 4942</td>
+            <td></td>
         </tr>
         
 
@@ -5489,7 +5733,8 @@
             <td>exonic</td>
             <td>HIST1H1C</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>1090T</td>
+            <td>1090</td>
+            <td></td>
         </tr>
         
 
@@ -5511,7 +5756,8 @@
             <td>exonic</td>
             <td>HIST1H1E</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>1090T, 4947T</td>
+            <td>1090, 4947</td>
+            <td></td>
         </tr>
         
 
@@ -5533,7 +5779,8 @@
             <td>exonic</td>
             <td>HIST1H1E</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>1061T, 1065T, 1066T, 6107T, 6113T, 6116T, 6208T</td>
+            <td>1061, 1065, 1066, 6107, 6113, 6116, 6208</td>
+            <td></td>
         </tr>
         
 
@@ -5555,7 +5802,8 @@
             <td>exonic</td>
             <td>HIST1H1E</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>6116T</td>
+            <td>6116</td>
+            <td></td>
         </tr>
         
 
@@ -5577,7 +5825,8 @@
             <td>exonic</td>
             <td>HIST1H1E</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>1094T, 1102T, 11841T</td>
+            <td>1094, 1102, 11841</td>
+            <td></td>
         </tr>
         
 
@@ -5599,6 +5848,7 @@
             <td>downstream</td>
             <td>HIST1H3D</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -5622,6 +5872,7 @@
             <td>HIST1H2AG</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -5643,7 +5894,8 @@
             <td>exonic</td>
             <td>HIST1H2BK</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>1065T, 1066T, 1102T, 1289T, 2973T, 2975T, 2985T, 4942T, 4946T, 4949T</td>
+            <td>1065, 1066, 1102, 1289, 2973, 2975, 2985, 4942, 4946, 4949</td>
+            <td></td>
         </tr>
         
 
@@ -5665,7 +5917,8 @@
             <td>exonic</td>
             <td>HIST1H2BK</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>1066T, 4948T, 6113T</td>
+            <td>1066, 4948, 6113</td>
+            <td></td>
         </tr>
         
 
@@ -5687,7 +5940,8 @@
             <td>exonic</td>
             <td>HIST1H2BK</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>1063T, 1065T, 1066T, 1102T, 11841T, 1282T, 1289T, 2985T</td>
+            <td>1063, 1065, 1066, 1102, 11841, 1282, 1289, 2985</td>
+            <td></td>
         </tr>
         
 
@@ -5709,7 +5963,8 @@
             <td>exonic</td>
             <td>HIST1H2BK</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>1090T</td>
+            <td>1090</td>
+            <td></td>
         </tr>
         
 
@@ -5731,7 +5986,8 @@
             <td>exonic</td>
             <td>HIST1H2BK</td>
             <td class="flagged-status" data-sort="yes">🚩 FLAGGED</td>
-            <td>1065T, 1066T, 1102T, 11841T, 2974T</td>
+            <td>1065, 1066, 1102, 11841, 2974</td>
+            <td></td>
         </tr>
         
 
@@ -5753,6 +6009,7 @@
             <td>exonic</td>
             <td>HIST1H3H</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -5776,6 +6033,7 @@
             <td>HIST1H3H</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -5797,6 +6055,7 @@
             <td>exonic</td>
             <td>HIST1H3H</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -5820,6 +6079,7 @@
             <td>HIST1H2AL</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -5841,6 +6101,7 @@
             <td>exonic</td>
             <td>HIST1H3J</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -5864,6 +6125,7 @@
             <td>HIST1H3J</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -5885,6 +6147,7 @@
             <td>UTR3</td>
             <td>HIST1H2AM</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -5908,6 +6171,7 @@
             <td>CCND3</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -5929,6 +6193,7 @@
             <td>exonic</td>
             <td>CCND3</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -5952,6 +6217,7 @@
             <td>CCND3</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -5973,6 +6239,7 @@
             <td>exonic</td>
             <td>CCND3</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -5996,6 +6263,7 @@
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -6017,6 +6285,7 @@
             <td>intronic</td>
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -6040,6 +6309,7 @@
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -6061,6 +6331,7 @@
             <td>intronic</td>
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -6084,6 +6355,7 @@
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -6105,6 +6377,7 @@
             <td>intronic</td>
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -6128,6 +6401,7 @@
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -6149,6 +6423,7 @@
             <td>intronic</td>
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -6172,6 +6447,7 @@
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -6193,6 +6469,7 @@
             <td>intronic</td>
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -6216,6 +6493,7 @@
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -6237,6 +6515,7 @@
             <td>intronic</td>
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -6260,6 +6539,7 @@
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -6281,6 +6561,7 @@
             <td>intronic</td>
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -6304,6 +6585,7 @@
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -6325,6 +6607,7 @@
             <td>intronic</td>
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -6348,6 +6631,7 @@
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -6369,6 +6653,7 @@
             <td>intronic</td>
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -6392,6 +6677,7 @@
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -6413,6 +6699,7 @@
             <td>intronic</td>
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -6436,6 +6723,7 @@
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -6457,6 +6745,7 @@
             <td>intronic</td>
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -6480,6 +6769,7 @@
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -6501,6 +6791,7 @@
             <td>UTR5</td>
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -6524,6 +6815,7 @@
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -6545,6 +6837,7 @@
             <td>UTR5</td>
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -6568,6 +6861,7 @@
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -6589,6 +6883,7 @@
             <td>UTR5</td>
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -6612,6 +6907,7 @@
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -6633,6 +6929,7 @@
             <td>UTR5</td>
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -6656,6 +6953,7 @@
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -6677,6 +6975,7 @@
             <td>UTR5</td>
             <td>BACH2</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -6700,6 +6999,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -6721,6 +7021,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -6744,6 +7045,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -6765,6 +7067,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -6788,6 +7091,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -6809,6 +7113,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -6832,6 +7137,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -6853,6 +7159,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -6876,6 +7183,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -6897,6 +7205,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -6920,6 +7229,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -6941,6 +7251,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -6964,6 +7275,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -6985,6 +7297,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -7008,6 +7321,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -7029,6 +7343,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -7052,6 +7367,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -7073,6 +7389,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -7096,6 +7413,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -7117,6 +7435,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -7140,6 +7459,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -7161,6 +7481,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -7184,6 +7505,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -7205,6 +7527,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -7228,6 +7551,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -7249,6 +7573,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -7272,6 +7597,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -7293,6 +7619,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -7316,6 +7643,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -7337,6 +7665,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -7360,6 +7689,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -7381,6 +7711,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -7404,6 +7735,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -7425,6 +7757,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -7448,6 +7781,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -7469,6 +7803,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -7492,6 +7827,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -7513,6 +7849,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -7536,6 +7873,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -7557,6 +7895,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -7580,6 +7919,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -7601,6 +7941,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -7624,6 +7965,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -7645,6 +7987,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -7668,6 +8011,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -7689,6 +8033,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -7712,6 +8057,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -7733,6 +8079,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -7756,6 +8103,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -7777,6 +8125,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -7800,6 +8149,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -7821,6 +8171,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -7844,6 +8195,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -7865,6 +8217,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -7888,6 +8241,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -7909,6 +8263,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -7932,6 +8287,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -7953,6 +8309,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -7976,6 +8333,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -7997,6 +8355,7 @@
             <td>UTR5</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -8020,6 +8379,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -8041,6 +8401,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -8064,6 +8425,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -8085,6 +8447,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -8108,6 +8471,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -8129,6 +8493,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -8152,6 +8517,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -8173,6 +8539,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -8196,6 +8563,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -8217,6 +8585,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -8240,6 +8609,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -8261,6 +8631,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -8284,6 +8655,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -8305,6 +8677,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -8328,6 +8701,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -8349,6 +8723,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -8372,6 +8747,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -8393,6 +8769,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -8416,6 +8793,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -8437,6 +8815,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -8460,6 +8839,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -8481,6 +8861,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -8504,6 +8885,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -8525,6 +8907,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -8548,6 +8931,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -8569,6 +8953,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -8592,6 +8977,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -8613,6 +8999,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -8636,6 +9023,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -8657,6 +9045,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -8680,6 +9069,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -8701,6 +9091,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -8724,6 +9115,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -8745,6 +9137,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -8768,6 +9161,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -8789,6 +9183,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -8812,6 +9207,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -8833,6 +9229,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -8856,6 +9253,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -8877,6 +9275,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -8900,6 +9299,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -8921,6 +9321,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -8944,6 +9345,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -8965,6 +9367,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -8988,6 +9391,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -9009,6 +9413,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -9032,6 +9437,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -9053,6 +9459,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -9076,6 +9483,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -9097,6 +9505,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -9120,6 +9529,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -9141,6 +9551,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -9164,6 +9575,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -9185,6 +9597,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -9208,6 +9621,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -9229,6 +9643,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -9252,6 +9667,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -9273,6 +9689,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -9296,6 +9713,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -9317,6 +9735,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -9340,6 +9759,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -9361,6 +9781,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -9384,6 +9805,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -9405,6 +9827,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -9428,6 +9851,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -9449,6 +9873,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -9472,6 +9897,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -9493,6 +9919,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -9516,6 +9943,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -9537,6 +9965,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -9560,6 +9989,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -9581,6 +10011,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -9604,6 +10035,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -9625,6 +10057,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -9648,6 +10081,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -9669,6 +10103,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -9692,6 +10127,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -9713,6 +10149,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -9736,6 +10173,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -9757,6 +10195,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -9780,6 +10219,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -9801,6 +10241,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -9824,6 +10265,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -9845,6 +10287,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -9868,6 +10311,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -9889,6 +10333,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -9912,6 +10357,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -9933,6 +10379,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -9956,6 +10403,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -9977,6 +10425,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -10000,6 +10449,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -10021,6 +10471,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -10044,6 +10495,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -10065,6 +10517,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -10088,6 +10541,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -10109,6 +10563,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -10132,6 +10587,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -10153,6 +10609,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -10176,6 +10633,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -10197,6 +10655,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -10220,6 +10679,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -10241,6 +10701,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -10264,6 +10725,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -10285,6 +10747,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -10308,6 +10771,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -10329,6 +10793,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -10352,6 +10817,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -10373,6 +10839,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -10396,6 +10863,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -10417,6 +10885,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -10440,6 +10909,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -10461,6 +10931,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -10484,6 +10955,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -10505,6 +10977,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -10528,6 +11001,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -10549,6 +11023,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -10572,6 +11047,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -10593,6 +11069,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -10616,6 +11093,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -10637,6 +11115,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -10660,6 +11139,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -10681,6 +11161,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -10704,6 +11185,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -10725,6 +11207,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -10748,6 +11231,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -10769,6 +11253,7 @@
             <td>intronic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -10792,6 +11277,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -10813,6 +11299,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -10836,6 +11323,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -10857,6 +11345,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -10880,6 +11369,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -10901,6 +11391,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -10924,6 +11415,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -10945,6 +11437,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -10968,6 +11461,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -10989,6 +11483,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -11012,6 +11507,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -11033,6 +11529,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -11056,6 +11553,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -11077,6 +11575,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -11100,6 +11599,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -11121,6 +11621,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -11144,6 +11645,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -11165,6 +11667,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -11188,6 +11691,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -11209,6 +11713,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -11232,6 +11737,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -11253,6 +11759,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -11276,6 +11783,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -11297,6 +11805,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -11320,6 +11829,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -11341,6 +11851,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -11364,6 +11875,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -11385,6 +11897,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -11408,6 +11921,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -11429,6 +11943,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -11452,6 +11967,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -11473,6 +11989,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -11496,6 +12013,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -11517,6 +12035,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -11540,6 +12059,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -11561,6 +12081,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -11584,6 +12105,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -11605,6 +12127,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -11628,6 +12151,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -11649,6 +12173,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -11672,6 +12197,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -11693,6 +12219,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -11716,6 +12243,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -11737,6 +12265,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -11760,6 +12289,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -11781,6 +12311,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -11804,6 +12335,7 @@
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -11825,6 +12357,7 @@
             <td>exonic</td>
             <td>MYC</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -11848,6 +12381,7 @@
             <td>PVT1</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -11869,6 +12403,7 @@
             <td>UTR3</td>
             <td>FZD3</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -11892,6 +12427,7 @@
             <td>PXDNL</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -11913,6 +12449,7 @@
             <td>intronic</td>
             <td>PXDNL</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -11936,6 +12473,7 @@
             <td>TMSB4X</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -11957,6 +12495,7 @@
             <td>intronic</td>
             <td>TMSB4X</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -11980,6 +12519,7 @@
             <td>DDX3X</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -12001,6 +12541,7 @@
             <td>exonic</td>
             <td>DDX3X</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -12024,6 +12565,7 @@
             <td>DDX3X</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -12046,6 +12588,7 @@
             <td>DDX3X</td>
             <td class="flagged-status" data-sort=""></td>
             <td></td>
+            <td></td>
         </tr>
         
 
@@ -12067,6 +12610,7 @@
             <td>splicing</td>
             <td>DDX3X</td>
             <td class="flagged-status" data-sort=""></td>
+            <td></td>
             <td></td>
         </tr>
         
@@ -12094,7 +12638,7 @@
         // Count flagged mutations
         function updateStats() {
             const visibleRows = rows.filter(r => !r.classList.contains('hidden'));
-            const flaggedCount = rows.filter(r => r.classList.contains('flagged-row')).length;
+            const flaggedCount = rows.filter(r => r.classList.contains('flagged-row') || r.classList.contains('mixed-row')).length;
             const passedCount = rows.filter(r => r.classList.contains('passed-row')).length;
             document.getElementById('flagged-count').textContent = flaggedCount;
             document.getElementById('passed-count').textContent = passedCount;
@@ -12125,7 +12669,7 @@
                 
                 // Flagged filter
                 if (currentFilter === 'flagged') {
-                    matches = matches && row.classList.contains('flagged-row');
+                    matches = matches && (row.classList.contains('flagged-row') || row.classList.contains('mixed-row'));
                 }
                 
                 row.classList.toggle('hidden', !matches);
@@ -12197,11 +12741,14 @@
                     aValue = a.cells[5].textContent.trim();
                     bValue = b.cells[5].textContent.trim();
                 } else if (column === 'flagged') {
-                    aValue = a.classList.contains('flagged-row') ? 0 : (a.classList.contains('passed-row') ? 1 : 2);
-                    bValue = b.classList.contains('flagged-row') ? 0 : (b.classList.contains('passed-row') ? 1 : 2);
-                } else if (column === 'sample-id') {
+                    aValue = a.classList.contains('flagged-row') ? 0 : (a.classList.contains('mixed-row') ? 1 : (a.classList.contains('passed-row') ? 2 : 3));
+                    bValue = b.classList.contains('flagged-row') ? 0 : (b.classList.contains('mixed-row') ? 1 : (b.classList.contains('passed-row') ? 2 : 3));
+                } else if (column === 'flagged-samples') {
                     aValue = a.cells[7].textContent.trim();
                     bValue = b.cells[7].textContent.trim();
+                } else if (column === 'passed-samples') {
+                    aValue = a.cells[8].textContent.trim();
+                    bValue = b.cells[8].textContent.trim();
                 }
                 
                 if (aValue < bValue) return sortDirection === 'asc' ? -1 : 1;
