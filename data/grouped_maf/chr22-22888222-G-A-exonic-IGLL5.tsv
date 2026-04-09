@@ -1,0 +1,3 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+2979	IGLL5	chr22	22888222	22888222	G	A		exonic	nonsynonymous_SNV	IGLL5:NM_001178126:exon1:c.G169A:p.G57R	chr22|22888222|G|A|exonic|IGLL5
+6112	IGLL5	chr22	22888222	22888222	G	A		exonic	nonsynonymous_SNV	IGLL5:NM_001178126:exon1:c.G169A:p.G57R	chr22|22888222|G|A|exonic|IGLL5

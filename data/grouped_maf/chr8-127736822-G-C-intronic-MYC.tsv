@@ -1,0 +1,3 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+2968	MYC	chr8	127736822	127736822	G	C		intronic	.	.	chr8|127736822|G|C|intronic|MYC
+2977	MYC	chr8	127736822	127736822	G	C		intronic	.	.	chr8|127736822|G|C|intronic|MYC

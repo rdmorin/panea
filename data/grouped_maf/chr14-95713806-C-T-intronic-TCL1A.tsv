@@ -1,0 +1,3 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+2975	TCL1A	chr14	95713806	95713806	C	T		intronic	.	.	chr14|95713806|C|T|intronic|TCL1A
+6115	TCL1A	chr14	95713806	95713806	C	T		intronic	.	.	chr14|95713806|C|T|intronic|TCL1A

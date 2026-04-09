@@ -1,0 +1,3 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+11843	BCR	chr22	23219023	23219023	G	GA		intronic	.	.	chr22|23219023|G|GA|intronic|BCR
+12132	BCR	chr22	23219023	23219023	G	GA		intronic	.	.	chr22|23219023|G|GA|intronic|BCR

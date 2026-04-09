@@ -1,0 +1,4 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+4941	IGLL5	chr22	22888064	22888064	A	G		exonic	nonsynonymous_SNV	IGLL5:NM_001178126:exon1:c.A11G:p.K4R	chr22|22888064|A|G|exonic|IGLL5
+4942	IGLL5	chr22	22888064	22888064	A	G		exonic	nonsynonymous_SNV	IGLL5:NM_001178126:exon1:c.A11G:p.K4R	chr22|22888064|A|G|exonic|IGLL5
+6116	IGLL5	chr22	22888064	22888064	A	G		exonic	nonsynonymous_SNV	IGLL5:NM_001178126:exon1:c.A11G:p.K4R	chr22|22888064|A|G|exonic|IGLL5

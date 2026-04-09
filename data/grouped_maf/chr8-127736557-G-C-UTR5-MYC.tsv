@@ -1,0 +1,3 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1104	MYC	chr8	127736557	127736557	G	C		UTR5	.	.	chr8|127736557|G|C|UTR5|MYC
+2968	MYC	chr8	127736557	127736557	G	C		UTR5	.	.	chr8|127736557|G|C|UTR5|MYC

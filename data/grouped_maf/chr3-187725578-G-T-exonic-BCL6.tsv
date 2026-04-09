@@ -1,0 +1,3 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+6112	BCL6	chr3	187725578	187725578	G	T		exonic	nonsynonymous_SNV	BCL6:NM_001134738:exon6:c.C1592A:p.A531D	chr3|187725578|G|T|exonic|BCL6
+6117	BCL6	chr3	187725578	187725578	G	T		exonic	nonsynonymous_SNV	BCL6:NM_001134738:exon6:c.C1592A:p.A531D	chr3|187725578|G|T|exonic|BCL6

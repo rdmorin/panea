@@ -1,0 +1,5 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+4940	EIF4A1	chr17	7576584	7576584	G	A		exonic	nonsynonymous_SNV	EIF4A1:NM_001204510:exon5:c.G406A:p.G136R	chr17|7576584|G|A|exonic|EIF4A1
+6115	EIF4A1	chr17	7576584	7576584	G	A		exonic	nonsynonymous_SNV	EIF4A1:NM_001204510:exon5:c.G406A:p.G136R	chr17|7576584|G|A|exonic|EIF4A1
+6116	EIF4A1	chr17	7576584	7576584	G	A		exonic	nonsynonymous_SNV	EIF4A1:NM_001204510:exon5:c.G406A:p.G136R	chr17|7576584|G|A|exonic|EIF4A1
+6197	EIF4A1	chr17	7576584	7576584	G	A		exonic	nonsynonymous_SNV	EIF4A1:NM_001204510:exon5:c.G406A:p.G136R	chr17|7576584|G|A|exonic|EIF4A1

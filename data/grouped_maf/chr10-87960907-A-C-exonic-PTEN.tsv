@@ -1,0 +1,4 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1065	PTEN	chr10	87960907	87960907	A	C		exonic	nonsynonymous_SNV	PTEN:NM_000314:exon8:c.A815C:p.H272P	chr10|87960907|A|C|exonic|PTEN
+2972	PTEN	chr10	87960907	87960907	A	C		exonic	nonsynonymous_SNV	PTEN:NM_000314:exon8:c.A815C:p.H272P	chr10|87960907|A|C|exonic|PTEN
+2977	PTEN	chr10	87960907	87960907	A	C		exonic	nonsynonymous_SNV	PTEN:NM_000314:exon8:c.A815C:p.H272P	chr10|87960907|A|C|exonic|PTEN

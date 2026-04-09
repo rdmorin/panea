@@ -1,0 +1,3 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1064	SIN3A	chr15	75414298	75414298	A	G		exonic	nonsynonymous_SNV	SIN3A:NM_001145357:exon4:c.T380C:p.L127P	chr15|75414298|A|G|exonic|SIN3A
+1101	SIN3A	chr15	75414298	75414298	A	G		exonic	nonsynonymous_SNV	SIN3A:NM_001145357:exon4:c.T380C:p.L127P	chr15|75414298|A|G|exonic|SIN3A

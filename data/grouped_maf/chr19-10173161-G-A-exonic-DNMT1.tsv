@@ -1,0 +1,5 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1288	DNMT1	chr19	10173161	10173161	G	A		exonic	nonsynonymous_SNV	DNMT1:NM_001318730:exon8:c.C649T:p.L217F	chr19|10173161|G|A|exonic|DNMT1
+4940	DNMT1	chr19	10173161	10173161	G	A		exonic	nonsynonymous_SNV	DNMT1:NM_001318730:exon8:c.C649T:p.L217F	chr19|10173161|G|A|exonic|DNMT1
+4942	DNMT1	chr19	10173161	10173161	G	A		exonic	nonsynonymous_SNV	DNMT1:NM_001318730:exon8:c.C649T:p.L217F	chr19|10173161|G|A|exonic|DNMT1
+6116	DNMT1	chr19	10173161	10173161	G	A		exonic	nonsynonymous_SNV	DNMT1:NM_001318730:exon8:c.C649T:p.L217F	chr19|10173161|G|A|exonic|DNMT1

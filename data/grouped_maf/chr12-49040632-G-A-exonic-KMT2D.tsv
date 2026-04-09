@@ -1,0 +1,5 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1102	KMT2D	chr12	49040632	49040632	G	A		exonic	stopgain	KMT2D:NM_003482:exon31:c.C7138T:p.Q2380X	chr12|49040632|G|A|exonic|KMT2D
+4945	KMT2D	chr12	49040632	49040632	G	A		exonic	stopgain	KMT2D:NM_003482:exon31:c.C7138T:p.Q2380X	chr12|49040632|G|A|exonic|KMT2D
+4949	KMT2D	chr12	49040632	49040632	G	A		exonic	stopgain	KMT2D:NM_003482:exon31:c.C7138T:p.Q2380X	chr12|49040632|G|A|exonic|KMT2D
+6208	KMT2D	chr12	49040632	49040632	G	A		exonic	stopgain	KMT2D:NM_003482:exon31:c.C7138T:p.Q2380X	chr12|49040632|G|A|exonic|KMT2D

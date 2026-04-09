@@ -1,0 +1,3 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+4941	BCL6	chr3	187745432	187745432	A	G		UTR5	.	.	chr3|187745432|A|G|UTR5|BCL6
+4942	BCL6	chr3	187745432	187745432	A	G		UTR5	.	.	chr3|187745432|A|G|UTR5|BCL6

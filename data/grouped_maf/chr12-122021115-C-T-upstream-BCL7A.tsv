@@ -1,0 +1,3 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+2965	BCL7A	chr12	122021115	122021115	C	T		upstream	.	.	chr12|122021115|C|T|upstream|BCL7A
+2976	BCL7A	chr12	122021115	122021115	C	T		upstream	.	.	chr12|122021115|C|T|upstream|BCL7A

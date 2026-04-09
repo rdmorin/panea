@@ -1,0 +1,3 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+2964	DTX1	chr12	113057612	113057612	C	T		upstream	.	.	chr12|113057612|C|T|upstream|DTX1
+2965	DTX1	chr12	113057612	113057612	C	T		upstream	.	.	chr12|113057612|C|T|upstream|DTX1

@@ -1,0 +1,4 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1285	DTX1	chr12	113058449	113058449	C	T		exonic	nonsynonymous_SNV	DTX1:NM_004416:exon1:c.C257T:p.T86I	chr12|113058449|C|T|exonic|DTX1
+4942	DTX1	chr12	113058449	113058449	C	T		exonic	nonsynonymous_SNV	DTX1:NM_004416:exon1:c.C257T:p.T86I	chr12|113058449|C|T|exonic|DTX1
+6208	DTX1	chr12	113058449	113058449	C	T		exonic	nonsynonymous_SNV	DTX1:NM_004416:exon1:c.C257T:p.T86I	chr12|113058449|C|T|exonic|DTX1

@@ -1,0 +1,5 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1094	BCR	chr22	23268604	23268604	A	T		intronic	.	.	chr22|23268604|A|T|intronic|BCR
+1102	BCR	chr22	23268604	23268604	A	T		intronic	.	.	chr22|23268604|A|T|intronic|BCR
+1285	BCR	chr22	23268604	23268604	A	T		intronic	.	.	chr22|23268604|A|T|intronic|BCR
+1288	BCR	chr22	23268604	23268604	A	T		intronic	.	.	chr22|23268604|A|T|intronic|BCR

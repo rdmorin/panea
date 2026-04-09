@@ -1,0 +1,3 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1296	BCL6	chr3	187744729	187744729	G	C		intronic	.	.	chr3|187744729|G|C|intronic|BCL6
+2973	BCL6	chr3	187744729	187744729	G	C		intronic	.	.	chr3|187744729|G|C|intronic|BCL6

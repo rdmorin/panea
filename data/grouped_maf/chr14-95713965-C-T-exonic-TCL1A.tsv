@@ -1,0 +1,4 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+11841	TCL1A	chr14	95713965	95713965	C	T		exonic	stopgain	TCL1A:NM_001098725:exon1:c.G102A:p.W34X	chr14|95713965|C|T|exonic|TCL1A
+4946	TCL1A	chr14	95713965	95713965	C	T		exonic	stopgain	TCL1A:NM_001098725:exon1:c.G102A:p.W34X	chr14|95713965|C|T|exonic|TCL1A
+4948	TCL1A	chr14	95713965	95713965	C	T		exonic	stopgain	TCL1A:NM_001098725:exon1:c.G102A:p.W34X	chr14|95713965|C|T|exonic|TCL1A

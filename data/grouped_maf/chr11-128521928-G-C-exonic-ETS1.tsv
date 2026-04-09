@@ -1,0 +1,3 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+2969	ETS1	chr11	128521928	128521928	G	C		exonic	nonsynonymous_SNV	ETS1:NM_001162422:exon1:c.C67G:p.L23V	chr11|128521928|G|C|exonic|ETS1
+6207	ETS1	chr11	128521928	128521928	G	C		exonic	nonsynonymous_SNV	ETS1:NM_001162422:exon1:c.C67G:p.L23V	chr11|128521928|G|C|exonic|ETS1

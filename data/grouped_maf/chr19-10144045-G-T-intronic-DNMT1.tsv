@@ -1,0 +1,4 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1097	DNMT1	chr19	10144045	10144045	G	T		intronic	.	.	chr19|10144045|G|T|intronic|DNMT1
+1102	DNMT1	chr19	10144045	10144045	G	T		intronic	.	.	chr19|10144045|G|T|intronic|DNMT1
+4943	DNMT1	chr19	10144045	10144045	G	T		intronic	.	.	chr19|10144045|G|T|intronic|DNMT1

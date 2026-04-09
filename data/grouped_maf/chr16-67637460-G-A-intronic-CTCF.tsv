@@ -1,0 +1,9 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+11843	CTCF	chr16	67637460	67637460	G	A		intronic	.	.	chr16|67637460|G|A|intronic|CTCF
+1276	CTCF	chr16	67637460	67637460	G	A		intronic	.	.	chr16|67637460|G|A|intronic|CTCF
+1282	CTCF	chr16	67637460	67637460	G	A		intronic	.	.	chr16|67637460|G|A|intronic|CTCF
+4942	CTCF	chr16	67637460	67637460	G	A		intronic	.	.	chr16|67637460|G|A|intronic|CTCF
+4946	CTCF	chr16	67637460	67637460	G	A		intronic	.	.	chr16|67637460|G|A|intronic|CTCF
+4949	CTCF	chr16	67637460	67637460	G	A		intronic	.	.	chr16|67637460|G|A|intronic|CTCF
+6107	CTCF	chr16	67637460	67637460	G	A		intronic	.	.	chr16|67637460|G|A|intronic|CTCF
+6197	CTCF	chr16	67637460	67637460	G	A		intronic	.	.	chr16|67637460|G|A|intronic|CTCF

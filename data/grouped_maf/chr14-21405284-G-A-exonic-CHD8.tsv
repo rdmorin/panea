@@ -1,0 +1,3 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1296	CHD8	chr14	21405284	21405284	G	A		exonic	nonsynonymous_SNV	CHD8:NM_001170629:exon15:c.C3232T:p.H1078Y	chr14|21405284|G|A|exonic|CHD8
+4940	CHD8	chr14	21405284	21405284	G	A		exonic	nonsynonymous_SNV	CHD8:NM_001170629:exon15:c.C3232T:p.H1078Y	chr14|21405284|G|A|exonic|CHD8

@@ -1,0 +1,3 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1283	ETS1	chr11	128521989	128521989	CT	C		exonic	frameshift_deletion	ETS1:NM_001162422:exon1:c.5delA:p.K2fs	chr11|128521989|CT|C|exonic|ETS1
+2973	ETS1	chr11	128521989	128521989	CT	C		exonic	frameshift_deletion	ETS1:NM_001162422:exon1:c.5delA:p.K2fs	chr11|128521989|CT|C|exonic|ETS1

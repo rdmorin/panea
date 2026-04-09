@@ -1,0 +1,10 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1276	DNMT1	chr19	10159442	10159442	G	C		intronic	.	.	chr19|10159442|G|C|intronic|DNMT1
+1282	DNMT1	chr19	10159442	10159442	G	C		intronic	.	.	chr19|10159442|G|C|intronic|DNMT1
+1295	DNMT1	chr19	10159442	10159442	G	C		intronic	.	.	chr19|10159442|G|C|intronic|DNMT1
+19096	DNMT1	chr19	10159442	10159442	G	C		intronic	.	.	chr19|10159442|G|C|intronic|DNMT1
+4940	DNMT1	chr19	10159442	10159442	G	C		intronic	.	.	chr19|10159442|G|C|intronic|DNMT1
+4946	DNMT1	chr19	10159442	10159442	G	C		intronic	.	.	chr19|10159442|G|C|intronic|DNMT1
+4948	DNMT1	chr19	10159442	10159442	G	C		intronic	.	.	chr19|10159442|G|C|intronic|DNMT1
+4949	DNMT1	chr19	10159442	10159442	G	C		intronic	.	.	chr19|10159442|G|C|intronic|DNMT1
+6207	DNMT1	chr19	10159442	10159442	G	C		intronic	.	.	chr19|10159442|G|C|intronic|DNMT1

@@ -1,0 +1,4 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1059	BTG2	chr1	203305730	203305730	C	T		exonic	nonsynonymous_SNV	BTG2:NM_006763:exon1:c.C124T:p.L42F	chr1|203305730|C|T|exonic|BTG2
+2978	BTG2	chr1	203305730	203305730	C	T		exonic	nonsynonymous_SNV	BTG2:NM_006763:exon1:c.C124T:p.L42F	chr1|203305730|C|T|exonic|BTG2
+6116	BTG2	chr1	203305730	203305730	C	T		exonic	nonsynonymous_SNV	BTG2:NM_006763:exon1:c.C124T:p.L42F	chr1|203305730|C|T|exonic|BTG2

@@ -1,0 +1,3 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+2990	HIST1H2AG	chr6	27133350	27133350	G	C		exonic	nonsynonymous_SNV	HIST1H2AG:NM_021064:exon1:c.G279C:p.E93D	chr6|27133350|G|C|exonic|HIST1H2AG
+6115	HIST1H2AG	chr6	27133350	27133350	G	C		exonic	nonsynonymous_SNV	HIST1H2AG:NM_021064:exon1:c.G279C:p.E93D	chr6|27133350|G|C|exonic|HIST1H2AG

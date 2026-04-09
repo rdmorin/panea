@@ -1,0 +1,3 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1294	ETS1	chr11	128521912	128521912	C	T		splicing	.	.	chr11|128521912|C|T|splicing|ETS1
+2980	ETS1	chr11	128521912	128521912	C	T		splicing	.	.	chr11|128521912|C|T|splicing|ETS1

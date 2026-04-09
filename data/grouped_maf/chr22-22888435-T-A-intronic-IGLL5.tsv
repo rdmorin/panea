@@ -1,0 +1,4 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1276	IGLL5	chr22	22888435	22888435	T	A		intronic	.	.	chr22|22888435|T|A|intronic|IGLL5
+2966	IGLL5	chr22	22888435	22888435	T	A		intronic	.	.	chr22|22888435|T|A|intronic|IGLL5
+4943	IGLL5	chr22	22888435	22888435	T	A		intronic	.	.	chr22|22888435|T|A|intronic|IGLL5

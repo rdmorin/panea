@@ -1,0 +1,5 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1283	DDX3X	chrX	41345223	41345223	T	G		exonic	nonsynonymous_SNV	DDX3X:NM_001193417:exon10:c.T1021G:p.F341V	chrX|41345223|T|G|exonic|DDX3X
+2976	DDX3X	chrX	41345223	41345223	T	G		exonic	nonsynonymous_SNV	DDX3X:NM_001193417:exon10:c.T1021G:p.F341V	chrX|41345223|T|G|exonic|DDX3X
+4941	DDX3X	chrX	41345223	41345223	T	G		exonic	nonsynonymous_SNV	DDX3X:NM_001193417:exon10:c.T1021G:p.F341V	chrX|41345223|T|G|exonic|DDX3X
+4942	DDX3X	chrX	41345223	41345223	T	G		exonic	nonsynonymous_SNV	DDX3X:NM_001193417:exon10:c.T1021G:p.F341V	chrX|41345223|T|G|exonic|DDX3X

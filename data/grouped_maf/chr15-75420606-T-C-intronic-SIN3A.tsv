@@ -1,0 +1,9 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+11843	SIN3A	chr15	75420606	75420606	T	C		intronic	.	.	chr15|75420606|T|C|intronic|SIN3A
+1276	SIN3A	chr15	75420606	75420606	T	C		intronic	.	.	chr15|75420606|T|C|intronic|SIN3A
+1297	SIN3A	chr15	75420606	75420606	T	C		intronic	.	.	chr15|75420606|T|C|intronic|SIN3A
+4940	SIN3A	chr15	75420606	75420606	T	C		intronic	.	.	chr15|75420606|T|C|intronic|SIN3A
+4942	SIN3A	chr15	75420606	75420606	T	C		intronic	.	.	chr15|75420606|T|C|intronic|SIN3A
+4946	SIN3A	chr15	75420606	75420606	T	C		intronic	.	.	chr15|75420606|T|C|intronic|SIN3A
+4948	SIN3A	chr15	75420606	75420606	T	C		intronic	.	.	chr15|75420606|T|C|intronic|SIN3A
+6107	SIN3A	chr15	75420606	75420606	T	C		intronic	.	.	chr15|75420606|T|C|intronic|SIN3A

@@ -1,0 +1,3 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1090	SMARCA4	chr19	11033317	11033317	C	T		exonic	nonsynonymous_SNV	SMARCA4:NM_001128845:exon25:c.C3574T:p.R1192C	chr19|11033317|C|T|exonic|SMARCA4
+6116	SMARCA4	chr19	11033317	11033317	C	T		exonic	nonsynonymous_SNV	SMARCA4:NM_001128845:exon25:c.C3574T:p.R1192C	chr19|11033317|C|T|exonic|SMARCA4

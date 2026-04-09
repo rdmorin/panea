@@ -1,0 +1,7 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1275	HNRNPU	chr1	244857531	244857531	A	G		intronic	.	.	chr1|244857531|A|G|intronic|HNRNPU
+4941	HNRNPU	chr1	244857531	244857531	A	G		intronic	.	.	chr1|244857531|A|G|intronic|HNRNPU
+4942	HNRNPU	chr1	244857531	244857531	A	G		intronic	.	.	chr1|244857531|A|G|intronic|HNRNPU
+4946	HNRNPU	chr1	244857531	244857531	A	G		intronic	.	.	chr1|244857531|A|G|intronic|HNRNPU
+4948	HNRNPU	chr1	244857531	244857531	A	G		intronic	.	.	chr1|244857531|A|G|intronic|HNRNPU
+6197	HNRNPU	chr1	244857531	244857531	A	G		intronic	.	.	chr1|244857531|A|G|intronic|HNRNPU

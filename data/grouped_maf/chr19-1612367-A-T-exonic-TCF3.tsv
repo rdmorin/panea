@@ -1,0 +1,5 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1282	TCF3	chr19	1612367	1612367	A	T		exonic	nonsynonymous_SNV	TCF3:NM_001136139:exon17:c.T1653A:p.N551K	chr19|1612367|A|T|exonic|TCF3
+2978	TCF3	chr19	1612367	1612367	A	T		exonic	nonsynonymous_SNV	TCF3:NM_001136139:exon17:c.T1653A:p.N551K	chr19|1612367|A|T|exonic|TCF3
+6103	TCF3	chr19	1612367	1612367	A	T		exonic	nonsynonymous_SNV	TCF3:NM_001136139:exon17:c.T1653A:p.N551K	chr19|1612367|A|T|exonic|TCF3
+6107	TCF3	chr19	1612367	1612367	A	T		exonic	nonsynonymous_SNV	TCF3:NM_001136139:exon17:c.T1653A:p.N551K	chr19|1612367|A|T|exonic|TCF3

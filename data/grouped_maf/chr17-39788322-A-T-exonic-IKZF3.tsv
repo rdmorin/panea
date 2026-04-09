@@ -1,0 +1,3 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+2968	IKZF3	chr17	39788322	39788322	A	T		exonic	nonsynonymous_SNV	IKZF3:NM_001257411:exon4:c.T216A:p.S72R	chr17|39788322|A|T|exonic|IKZF3
+2988	IKZF3	chr17	39788322	39788322	A	T		exonic	nonsynonymous_SNV	IKZF3:NM_001257411:exon4:c.T216A:p.S72R	chr17|39788322|A|T|exonic|IKZF3

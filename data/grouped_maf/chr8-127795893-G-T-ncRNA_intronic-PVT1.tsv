@@ -1,0 +1,3 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+2979	PVT1	chr8	127795893	127795893	G	T		ncRNA_intronic	.	.	chr8|127795893|G|T|ncRNA_intronic|PVT1
+2989	PVT1	chr8	127795893	127795893	G	T		ncRNA_intronic	.	.	chr8|127795893|G|T|ncRNA_intronic|PVT1

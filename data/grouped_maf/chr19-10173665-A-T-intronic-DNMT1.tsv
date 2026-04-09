@@ -1,0 +1,17 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1276	DNMT1	chr19	10173665	10173665	A	T		intronic	.	.	chr19|10173665|A|T|intronic|DNMT1
+19095	DNMT1	chr19	10173665	10173665	A	T		intronic	.	.	chr19|10173665|A|T|intronic|DNMT1
+4941	DNMT1	chr19	10173665	10173665	A	T		intronic	.	.	chr19|10173665|A|T|intronic|DNMT1
+4942	DNMT1	chr19	10173665	10173665	A	T		intronic	.	.	chr19|10173665|A|T|intronic|DNMT1
+4945	DNMT1	chr19	10173665	10173665	A	T		intronic	.	.	chr19|10173665|A|T|intronic|DNMT1
+4946	DNMT1	chr19	10173665	10173665	A	T		intronic	.	.	chr19|10173665|A|T|intronic|DNMT1
+4948	DNMT1	chr19	10173665	10173665	A	T		intronic	.	.	chr19|10173665|A|T|intronic|DNMT1
+4949	DNMT1	chr19	10173665	10173665	A	T		intronic	.	.	chr19|10173665|A|T|intronic|DNMT1
+6102	DNMT1	chr19	10173665	10173665	A	T		intronic	.	.	chr19|10173665|A|T|intronic|DNMT1
+6103	DNMT1	chr19	10173665	10173665	A	T		intronic	.	.	chr19|10173665|A|T|intronic|DNMT1
+6106	DNMT1	chr19	10173665	10173665	A	T		intronic	.	.	chr19|10173665|A|T|intronic|DNMT1
+6107	DNMT1	chr19	10173665	10173665	A	T		intronic	.	.	chr19|10173665|A|T|intronic|DNMT1
+6113	DNMT1	chr19	10173665	10173665	A	T		intronic	.	.	chr19|10173665|A|T|intronic|DNMT1
+6197	DNMT1	chr19	10173665	10173665	A	T		intronic	.	.	chr19|10173665|A|T|intronic|DNMT1
+6199	DNMT1	chr19	10173665	10173665	A	T		intronic	.	.	chr19|10173665|A|T|intronic|DNMT1
+6208	DNMT1	chr19	10173665	10173665	A	T		intronic	.	.	chr19|10173665|A|T|intronic|DNMT1

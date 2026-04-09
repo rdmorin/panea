@@ -1,0 +1,3 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+4942	BACH2	chr6	90271797	90271797	G	A		intronic	.	.	chr6|90271797|G|A|intronic|BACH2
+4946	BACH2	chr6	90271797	90271797	G	A		intronic	.	.	chr6|90271797|G|A|intronic|BACH2

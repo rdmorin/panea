@@ -1,0 +1,12 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1282	BCR	chr22	23199066	23199066	A	G		intronic	.	.	chr22|23199066|A|G|intronic|BCR
+1284	BCR	chr22	23199066	23199066	A	G		intronic	.	.	chr22|23199066|A|G|intronic|BCR
+4940	BCR	chr22	23199066	23199066	A	G		intronic	.	.	chr22|23199066|A|G|intronic|BCR
+4941	BCR	chr22	23199066	23199066	A	G		intronic	.	.	chr22|23199066|A|G|intronic|BCR
+4942	BCR	chr22	23199066	23199066	A	G		intronic	.	.	chr22|23199066|A|G|intronic|BCR
+4945	BCR	chr22	23199066	23199066	A	G		intronic	.	.	chr22|23199066|A|G|intronic|BCR
+4946	BCR	chr22	23199066	23199066	A	G		intronic	.	.	chr22|23199066|A|G|intronic|BCR
+4949	BCR	chr22	23199066	23199066	A	G		intronic	.	.	chr22|23199066|A|G|intronic|BCR
+6102	BCR	chr22	23199066	23199066	A	G		intronic	.	.	chr22|23199066|A|G|intronic|BCR
+6107	BCR	chr22	23199066	23199066	A	G		intronic	.	.	chr22|23199066|A|G|intronic|BCR
+6116	BCR	chr22	23199066	23199066	A	G		intronic	.	.	chr22|23199066|A|G|intronic|BCR

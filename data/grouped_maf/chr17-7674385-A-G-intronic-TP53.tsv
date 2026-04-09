@@ -1,0 +1,8 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+19096	TP53	chr17	7674385	7674385	A	G		intronic	.	.	chr17|7674385|A|G|intronic|TP53
+4940	TP53	chr17	7674385	7674385	A	G		intronic	.	.	chr17|7674385|A|G|intronic|TP53
+4942	TP53	chr17	7674385	7674385	A	G		intronic	.	.	chr17|7674385|A|G|intronic|TP53
+4945	TP53	chr17	7674385	7674385	A	G		intronic	.	.	chr17|7674385|A|G|intronic|TP53
+4946	TP53	chr17	7674385	7674385	A	G		intronic	.	.	chr17|7674385|A|G|intronic|TP53
+4949	TP53	chr17	7674385	7674385	A	G		intronic	.	.	chr17|7674385|A|G|intronic|TP53
+6199	TP53	chr17	7674385	7674385	A	G		intronic	.	.	chr17|7674385|A|G|intronic|TP53

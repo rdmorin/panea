@@ -1,0 +1,6 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+2973	BTG2	chr1	203305978	203305978	C	T		intronic	.	.	chr1|203305978|C|T|intronic|BTG2
+2978	BTG2	chr1	203305978	203305978	C	T		intronic	.	.	chr1|203305978|C|T|intronic|BTG2
+2984	BTG2	chr1	203305978	203305978	C	T		intronic	.	.	chr1|203305978|C|T|intronic|BTG2
+2989	BTG2	chr1	203305978	203305978	C	T		intronic	.	.	chr1|203305978|C|T|intronic|BTG2
+4949	BTG2	chr1	203305978	203305978	C	T		intronic	.	.	chr1|203305978|C|T|intronic|BTG2

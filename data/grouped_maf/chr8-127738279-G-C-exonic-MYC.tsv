@@ -1,0 +1,3 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+2972	MYC	chr8	127738279	127738279	G	C		exonic	nonsynonymous_SNV	MYC:NM_002467:exon2:c.G62C:p.S21T	chr8|127738279|G|C|exonic|MYC
+6106	MYC	chr8	127738279	127738279	G	C		exonic	nonsynonymous_SNV	MYC:NM_002467:exon2:c.G62C:p.S21T	chr8|127738279|G|C|exonic|MYC

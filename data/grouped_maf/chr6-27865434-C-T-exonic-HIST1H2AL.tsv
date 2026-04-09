@@ -1,0 +1,5 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+4945	HIST1H2AL	chr6	27865434	27865434	C	T		exonic	nonsynonymous_SNV	HIST1H2AL:NM_003511:exon1:c.C80T:p.P27L	chr6|27865434|C|T|exonic|HIST1H2AL
+4948	HIST1H2AL	chr6	27865434	27865434	C	T		exonic	nonsynonymous_SNV	HIST1H2AL:NM_003511:exon1:c.C80T:p.P27L	chr6|27865434|C|T|exonic|HIST1H2AL
+6113	HIST1H2AL	chr6	27865434	27865434	C	T		exonic	nonsynonymous_SNV	HIST1H2AL:NM_003511:exon1:c.C80T:p.P27L	chr6|27865434|C|T|exonic|HIST1H2AL
+6116	HIST1H2AL	chr6	27865434	27865434	C	T		exonic	nonsynonymous_SNV	HIST1H2AL:NM_003511:exon1:c.C80T:p.P27L	chr6|27865434|C|T|exonic|HIST1H2AL

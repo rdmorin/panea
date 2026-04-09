@@ -1,0 +1,6 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1102	ID3	chr1	23559261	23559261	G	A		exonic	nonsynonymous_SNV	ID3:NM_002167:exon1:c.C166T:p.P56S	chr1|23559261|G|A|exonic|ID3
+11843	ID3	chr1	23559261	23559261	G	A		exonic	nonsynonymous_SNV	ID3:NM_002167:exon1:c.C166T:p.P56S	chr1|23559261|G|A|exonic|ID3
+12132	ID3	chr1	23559261	23559261	G	A		exonic	nonsynonymous_SNV	ID3:NM_002167:exon1:c.C166T:p.P56S	chr1|23559261|G|A|exonic|ID3
+6112	ID3	chr1	23559261	23559261	G	A		exonic	nonsynonymous_SNV	ID3:NM_002167:exon1:c.C166T:p.P56S	chr1|23559261|G|A|exonic|ID3
+6197	ID3	chr1	23559261	23559261	G	A		exonic	nonsynonymous_SNV	ID3:NM_002167:exon1:c.C166T:p.P56S	chr1|23559261|G|A|exonic|ID3

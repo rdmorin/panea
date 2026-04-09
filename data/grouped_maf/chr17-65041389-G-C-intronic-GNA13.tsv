@@ -1,0 +1,3 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1096	GNA13	chr17	65041389	65041389	G	C		intronic	.	.	chr17|65041389|G|C|intronic|GNA13
+1296	GNA13	chr17	65041389	65041389	G	C		intronic	.	.	chr17|65041389|G|C|intronic|GNA13

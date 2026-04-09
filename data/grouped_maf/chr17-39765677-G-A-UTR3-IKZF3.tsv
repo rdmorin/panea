@@ -1,0 +1,4 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1288	IKZF3	chr17	39765677	39765677	G	A		UTR3	.	.	chr17|39765677|G|A|UTR3|IKZF3
+4945	IKZF3	chr17	39765677	39765677	G	A		UTR3	.	.	chr17|39765677|G|A|UTR3|IKZF3
+4949	IKZF3	chr17	39765677	39765677	G	A		UTR3	.	.	chr17|39765677|G|A|UTR3|IKZF3

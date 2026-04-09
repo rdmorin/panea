@@ -1,0 +1,7 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1066	FOXO1	chr13	40666142	40666142	G	A		exonic	nonsynonymous_SNV	FOXO1:NM_002015:exon1:c.C71T:p.T24I	chr13|40666142|G|A|exonic|FOXO1
+1104	FOXO1	chr13	40666142	40666142	G	A		exonic	nonsynonymous_SNV	FOXO1:NM_002015:exon1:c.C71T:p.T24I	chr13|40666142|G|A|exonic|FOXO1
+2977	FOXO1	chr13	40666142	40666142	G	A		exonic	nonsynonymous_SNV	FOXO1:NM_002015:exon1:c.C71T:p.T24I	chr13|40666142|G|A|exonic|FOXO1
+2982	FOXO1	chr13	40666142	40666142	G	A		exonic	nonsynonymous_SNV	FOXO1:NM_002015:exon1:c.C71T:p.T24I	chr13|40666142|G|A|exonic|FOXO1
+6112	FOXO1	chr13	40666142	40666142	G	A		exonic	nonsynonymous_SNV	FOXO1:NM_002015:exon1:c.C71T:p.T24I	chr13|40666142|G|A|exonic|FOXO1
+6113	FOXO1	chr13	40666142	40666142	G	A		exonic	nonsynonymous_SNV	FOXO1:NM_002015:exon1:c.C71T:p.T24I	chr13|40666142|G|A|exonic|FOXO1

@@ -1,0 +1,5 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1065	GNAI2	chr3	50252470	50252470	C	T		exonic	stopgain	GNAI2:NM_001166425:exon3:c.C124T:p.Q42X	chr3|50252470|C|T|exonic|GNAI2
+1296	GNAI2	chr3	50252470	50252470	C	T		exonic	stopgain	GNAI2:NM_001166425:exon3:c.C124T:p.Q42X	chr3|50252470|C|T|exonic|GNAI2
+6116	GNAI2	chr3	50252470	50252470	C	T		exonic	stopgain	GNAI2:NM_001166425:exon3:c.C124T:p.Q42X	chr3|50252470|C|T|exonic|GNAI2
+6207	GNAI2	chr3	50252470	50252470	C	T		exonic	stopgain	GNAI2:NM_001166425:exon3:c.C124T:p.Q42X	chr3|50252470|C|T|exonic|GNAI2

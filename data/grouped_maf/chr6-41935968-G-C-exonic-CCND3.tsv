@@ -1,0 +1,3 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1063	CCND3	chr6	41935968	41935968	G	C		exonic	nonsynonymous_SNV	CCND3:NM_001136125:exon4:c.C635G:p.P212R	chr6|41935968|G|C|exonic|CCND3
+1295	CCND3	chr6	41935968	41935968	G	C		exonic	nonsynonymous_SNV	CCND3:NM_001136125:exon4:c.C635G:p.P212R	chr6|41935968|G|C|exonic|CCND3

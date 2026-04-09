@@ -1,0 +1,4 @@
+sample_id	Hugo_Symbol	Chromosome	Start_Position	End_Position	Ref	Alt	Support	region	effect	details	MUT_ID
+1102	PIK3R1	chr5	68298424	68298424	C	T		UTR3	.	.	chr5|68298424|C|T|UTR3|PIK3R1
+4945	PIK3R1	chr5	68298424	68298424	C	T		UTR3	.	.	chr5|68298424|C|T|UTR3|PIK3R1
+4948	PIK3R1	chr5	68298424	68298424	C	T		UTR3	.	.	chr5|68298424|C|T|UTR3|PIK3R1
